@@ -3,10 +3,9 @@
   <img src="logo.png" alt="ScrumBot logo" width="180">
 </p>
 
-# ScrumBot
 
 # ScrumBot
-
+Contributors - Om vyas (omvyas2@illinois.edu) & Nakul Vasani (nvasani2@illinois.edu)
 ## Problem statement and why it matters
 Agile teams waste hours after sprint ceremonies turning loosely phrased discussion into **concrete user stories** and then deciding **who should own each story**. Ownership is often ad-hoc (who spoke loudest, who did it last time, who seems free), creating bottlenecks, uneven workload, and missed growth opportunities.  
 **ScrumBot** converts meeting transcripts into structured Scrum artifacts (As a / I want / So that + Given/When/Then) and uses **retrieval-augmented generation (RAG)** over a private **team skills/experience database** to recommend owners with transparent, evidence-backed justifications. Humans stay in the loop to confirm or override.
