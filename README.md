@@ -78,6 +78,7 @@ Agile teams waste hours after sprint ceremonies turning loosely phrased discussi
 # ScrumBot - AI-Powered Sprint Planning Assistant
 
 ScrumBot converts meeting transcripts into structured Scrum artifacts and uses AI to recommend optimal story owners based on team skills, capacity, and preferences.
+You can access the presentation upto checkpoint 3 in Scrumbot.pdf
 
 ## Features
 
