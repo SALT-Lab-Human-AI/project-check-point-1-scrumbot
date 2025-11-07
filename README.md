@@ -3,6 +3,7 @@
   <img src="logo.png" alt="ScrumBot logo" width="180">
 </p>
 Checkpoint 3 github - https://github.com/omvyas2/scrumbot-dynamic
+Presentation - https://uillinoisedu-my.sharepoint.com/:p:/g/personal/omvyas2_illinois_edu/Ea3ksR5NWTNIqK_KavycQsEBgzfM9KMULNKyLO-svnpr_w?e=n9I31m
 
 # ScrumBot
 Contributors - Om vyas (omvyas2@illinois.edu) & Nakul Vasani (nvasani2@illinois.edu)
