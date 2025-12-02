@@ -11,13 +11,24 @@ export async function fetchSavedTranscripts(
 ) {
   try {
     const response = await fetch("/api/transcripts")
-    const data = await response.json()
+    const text = await response.text()
+
+    let data
+    try {
+      data = JSON.parse(text)
+    } catch {
+      // Not valid JSON - table likely doesn't exist, just use empty array
+      setSavedTranscripts([])
+      return
+    }
 
     if (data.transcripts) {
       setSavedTranscripts(data.transcripts)
+    } else {
+      setSavedTranscripts([])
     }
-  } catch (error) {
-    console.error("[v0] Error fetching transcripts:", error)
+  } catch {
+    setSavedTranscripts([])
   } finally {
     setIsLoadingTranscripts(false)
   }

@@ -1,40 +1,63 @@
 import { NextResponse } from "next/server"
-import { createClient } from "@/lib/supabase/server"
+import { createAdminClient } from "@/lib/supabase/admin"
 
 export async function GET() {
   try {
-    const supabase = await createClient()
+    const supabase = createAdminClient()
 
-    const [membersResult, skillsResult, capacityResult, preferencesResult, historyResult] = await Promise.all([
-      supabase.from("team_members").select("member_id", { count: "exact", head: true }),
-      supabase.from("member_skills").select("member_id", { count: "exact", head: true }),
-      supabase.from("member_capacity").select("member_id", { count: "exact", head: true }),
-      supabase.from("member_preferences").select("member_id", { count: "exact", head: true }),
-      supabase.from("story_history").select("story_id", { count: "exact", head: true }),
+    const getCount = async (table: string, column: string) => {
+      try {
+        const { count, error } = await supabase.from(table).select(column, { count: "exact", head: true })
+        if (error) {
+          // Table doesn't exist or other error
+          console.log(`[v0] Table ${table} query error:`, error.message)
+          return { count: 0, exists: !error.message?.includes("does not exist") }
+        }
+        return { count: count || 0, exists: true }
+      } catch {
+        return { count: 0, exists: false }
+      }
+    }
+
+    const [members, skills, capacity, preferences, history] = await Promise.all([
+      getCount("team_members", "member_id"),
+      getCount("member_skills", "member_id"),
+      getCount("member_capacity", "member_id"),
+      getCount("member_preferences", "member_id"),
+      getCount("story_history", "story_id"),
     ])
 
+    // Check if any table exists
+    const tablesExist = members.exists || skills.exists || capacity.exists || preferences.exists || history.exists
+
     const status = {
-      hasData: false,
+      hasData: members.count > 0,
+      dbSetupNeeded: !tablesExist,
       counts: {
-        team_members: membersResult.count || 0,
-        skills: skillsResult.count || 0,
-        capacity: capacityResult.count || 0,
-        preferences: preferencesResult.count || 0,
-        history: historyResult.count || 0,
+        team_members: members.count,
+        skills: skills.count,
+        capacity: capacity.count,
+        preferences: preferences.count,
+        history: history.count,
       },
     }
 
-    // Consider data loaded if we have at least team members
-    status.hasData = status.counts.team_members > 0
-
-    console.log("[v0] Team data status:", status)
+    console.log("[v0] Team data status:", JSON.stringify(status))
 
     return NextResponse.json(status)
   } catch (error) {
     console.error("[v0] Error checking team data status:", error)
-    return NextResponse.json(
-      { error: error instanceof Error ? error.message : "Failed to check status" },
-      { status: 500 },
-    )
+    return NextResponse.json({
+      hasData: false,
+      dbSetupNeeded: true,
+      counts: {
+        team_members: 0,
+        skills: 0,
+        capacity: 0,
+        preferences: 0,
+        history: 0,
+      },
+      error: error instanceof Error ? error.message : "Failed to check status",
+    })
   }
 }

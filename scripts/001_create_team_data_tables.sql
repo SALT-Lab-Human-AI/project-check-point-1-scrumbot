@@ -73,6 +73,16 @@ CREATE TABLE IF NOT EXISTS story_history (
   PRIMARY KEY (story_id, member_id)
 );
 
+-- Add transcripts table for saving uploaded transcripts
+CREATE TABLE IF NOT EXISTS transcripts (
+  id UUID PRIMARY KEY DEFAULT gen_random_uuid(),
+  filename TEXT NOT NULL,
+  content TEXT NOT NULL,
+  parsed_segments JSONB,
+  segment_count INTEGER DEFAULT 0,
+  created_at TIMESTAMP WITH TIME ZONE DEFAULT NOW()
+);
+
 -- Create indexes for better query performance
 CREATE INDEX IF NOT EXISTS idx_member_capacity_member ON member_capacity(member_id);
 CREATE INDEX IF NOT EXISTS idx_member_capacity_sprint ON member_capacity(sprint_id);
@@ -80,6 +90,7 @@ CREATE INDEX IF NOT EXISTS idx_member_skills_member ON member_skills(member_id);
 CREATE INDEX IF NOT EXISTS idx_member_skills_skill ON member_skills(skill);
 CREATE INDEX IF NOT EXISTS idx_story_history_member ON story_history(member_id);
 CREATE INDEX IF NOT EXISTS idx_story_history_tags ON story_history USING GIN(tags);
+CREATE INDEX IF NOT EXISTS idx_transcripts_created ON transcripts(created_at DESC);
 
 -- Add a metadata table to track CSV uploads
 CREATE TABLE IF NOT EXISTS csv_upload_metadata (

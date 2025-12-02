@@ -13,7 +13,9 @@ import { parseTranscript, detectFormat } from "@/lib/parseTranscript"
 import { extractTeamFromTranscript } from "@/lib/extractTeamFromTranscript"
 import { DEMO_KB, DEMO_TRANSCRIPT } from "@/lib/fixtures"
 import { toast } from "sonner"
-import { fetchSavedTranscripts } from "@/lib/fetchSavedTranscripts" // Import fetchSavedTranscripts
+import { fetchSavedTranscripts } from "@/lib/fetchSavedTranscripts"
+import { OnboardingTutorial } from "@/components/onboarding-tutorial"
+import { AgileExplainer } from "@/components/agile-explainer" // Import fetchSavedTranscripts
 
 type SavedTranscript = {
   id: string
@@ -63,6 +65,78 @@ export default function LandingPage() {
     }
   }
 
+  const enrichTeamMembersWithData = async (basicTeamMembers: any[]) => {
+    // Try to enrich team members with database data if available
+    if (!teamDataStatus?.hasData) {
+      return basicTeamMembers
+    }
+
+    try {
+      // Get all member names from database
+      const response = await fetch("/api/team-data/status")
+      const data = await response.json()
+      
+      if (!data.hasData) {
+        return basicTeamMembers
+      }
+
+      // Query for matching members by name
+      const memberNames = basicTeamMembers.map(m => m.name)
+      const queryResponse = await fetch("/api/team-data/query-by-names", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ memberNames }),
+      })
+
+      if (!queryResponse.ok) {
+        return basicTeamMembers
+      }
+
+      const { teamData } = await queryResponse.json()
+      
+      if (!teamData || teamData.length === 0) {
+        return basicTeamMembers
+      }
+
+      // Merge database data with extracted team members
+      return basicTeamMembers.map(basicMember => {
+        const dbMember = teamData.find((tm: any) => 
+          tm.name.toLowerCase() === basicMember.name.toLowerCase()
+        )
+        
+        if (dbMember) {
+          return {
+            id: dbMember.member_id,
+            name: dbMember.name,
+            role: dbMember.role,
+            timezone: dbMember.time_zone,
+            skills: dbMember.skills?.map((s: any) => ({
+              name: s.skill,
+              level: s.level,
+            })) || [],
+            history: dbMember.history?.map((h: any) => ({
+              projectName: h.story_id,
+              role: h.tags,
+              duration: `${h.cycle_time_days} days`,
+            })) || [],
+            capacity: {
+              hoursPerSprint: dbMember.capacity?.[0]?.hours_available || 40,
+              currentLoad: 0,
+            },
+            preferences: {
+              wants_to_learn: dbMember.preferences?.map((p: any) => p.wants_to_learn) || [],
+              prefers_not: [],
+            },
+          }
+        }
+        return basicMember
+      })
+    } catch (error) {
+      console.error("[v0] Error enriching team data:", error)
+      return basicTeamMembers
+    }
+  }
+
   const handleFileUpload = async (file: File) => {
     setIsUploading(true)
     try {
@@ -78,11 +152,13 @@ export default function LandingPage() {
       setTranscript(segments)
       setUploadedFile({ name: file.name, segments: segments.length })
 
-      const teamMembers = extractTeamFromTranscript(segments)
+      const basicTeamMembers = extractTeamFromTranscript(segments)
+      const enrichedTeamMembers = await enrichTeamMembersWithData(basicTeamMembers)
+      
       const dynamicTeamKB = {
         sprintId: `SPRINT-${new Date().getFullYear()}-${Math.ceil((new Date().getMonth() + 1) / 3)}`,
-        sprintCapacity: teamMembers.reduce((sum, m) => sum + m.capacity.hoursPerSprint, 0),
-        members: teamMembers,
+        sprintCapacity: enrichedTeamMembers.reduce((sum, m) => sum + m.capacity.hoursPerSprint, 0),
+        members: enrichedTeamMembers,
       }
       setTeamKB(dynamicTeamKB)
 
@@ -124,11 +200,13 @@ export default function LandingPage() {
           segments: segments.length,
         })
 
-        const teamMembers = extractTeamFromTranscript(segments)
+        const basicTeamMembers = extractTeamFromTranscript(segments)
+        const enrichedTeamMembers = await enrichTeamMembersWithData(basicTeamMembers)
+        
         const dynamicTeamKB = {
           sprintId: `SPRINT-${new Date().getFullYear()}-${Math.ceil((new Date().getMonth() + 1) / 3)}`,
-          sprintCapacity: teamMembers.reduce((sum, m) => sum + m.capacity.hoursPerSprint, 0),
-          members: teamMembers,
+          sprintCapacity: enrichedTeamMembers.reduce((sum, m) => sum + m.capacity.hoursPerSprint, 0),
+          members: enrichedTeamMembers,
         }
         setTeamKB(dynamicTeamKB)
 
@@ -194,11 +272,16 @@ export default function LandingPage() {
 
   return (
     <div className="container mx-auto px-4 py-8 max-w-6xl">
+      <OnboardingTutorial />
+      
       <div className="mb-8 text-center">
         <h1 className="text-4xl font-bold mb-3 text-balance">Sprint Planning Assistant</h1>
         <p className="text-lg text-muted-foreground text-pretty">
           Upload meeting transcripts and let AI suggest optimal story owners
         </p>
+        <div className="flex items-center justify-center gap-2 mt-3">
+          <AgileExplainer />
+        </div>
       </div>
 
       {!isLoadingTeamStatus && (
@@ -371,21 +454,46 @@ export default function LandingPage() {
                 {displayTeam.map((member) => (
                   <div
                     key={member.id}
-                    className="flex items-center justify-between p-3 rounded-lg border bg-card hover:bg-accent/50 transition-colors"
+                    className="p-3 rounded-lg border bg-card hover:bg-accent/50 transition-colors"
                   >
-                    <div className="flex items-center gap-3">
-                      <div className="h-10 w-10 rounded-full bg-primary/10 flex items-center justify-center">
-                        <User className="h-5 w-5 text-primary" />
+                    <div className="flex items-center justify-between">
+                      <div className="flex items-center gap-3 flex-1 min-w-0">
+                        <div className="h-10 w-10 rounded-full bg-primary/10 flex items-center justify-center flex-shrink-0">
+                          <User className="h-5 w-5 text-primary" />
+                        </div>
+                        <div className="flex-1 min-w-0">
+                          <p className="font-medium truncate">{member.name}</p>
+                          <p className="text-sm text-muted-foreground">{member.role}</p>
+                          {member.timezone && member.timezone !== "UTC" && (
+                            <p className="text-xs text-muted-foreground">{member.timezone}</p>
+                          )}
+                        </div>
                       </div>
-                      <div>
-                        <p className="font-medium">{member.name}</p>
-                        <p className="text-sm text-muted-foreground">{member.role}</p>
+                      <div className="text-right flex-shrink-0">
+                        <p className="font-semibold">{member.capacity.hoursPerSprint}h</p>
+                        <p className="text-xs text-muted-foreground">capacity</p>
                       </div>
                     </div>
-                    <div className="text-right">
-                      <p className="font-semibold">{member.capacity.hoursPerSprint}h</p>
-                      <p className="text-xs text-muted-foreground">capacity</p>
-                    </div>
+                    {member.skills && member.skills.length > 0 && (
+                      <div className="mt-2 pt-2 border-t">
+                        <p className="text-xs text-muted-foreground mb-1">Skills:</p>
+                        <div className="flex flex-wrap gap-1">
+                          {member.skills.slice(0, 5).map((skill, idx) => (
+                            <span
+                              key={idx}
+                              className="text-xs px-2 py-0.5 rounded-full bg-primary/10 text-primary"
+                            >
+                              {skill.name} ({skill.level}/5)
+                            </span>
+                          ))}
+                          {member.skills.length > 5 && (
+                            <span className="text-xs px-2 py-0.5 text-muted-foreground">
+                              +{member.skills.length - 5} more
+                            </span>
+                          )}
+                        </div>
+                      </div>
+                    )}
                   </div>
                 ))}
               </div>
@@ -396,7 +504,9 @@ export default function LandingPage() {
               </div>
             )}
             <p className="text-xs text-muted-foreground mt-4 text-center">
-              Team members are automatically extracted from transcript speakers
+              {teamDataStatus?.hasData
+                ? "Team members extracted from transcript and enriched with CSV data"
+                : "Team members are automatically extracted from transcript speakers"}
             </p>
           </Card>
         </div>

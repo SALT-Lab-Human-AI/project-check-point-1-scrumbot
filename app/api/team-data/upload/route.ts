@@ -1,5 +1,5 @@
 import { type NextRequest, NextResponse } from "next/server"
-import { createClient } from "@/lib/supabase/server"
+import { createAdminClient } from "@/lib/supabase/admin"
 import { parseCSV, csvRowToObject } from "@/lib/csv-parser"
 
 export async function POST(request: NextRequest) {
@@ -15,7 +15,7 @@ export async function POST(request: NextRequest) {
     const content = await file.text()
     const { headers, rows } = parseCSV(content)
 
-    const supabase = await createClient()
+    const supabase = createAdminClient()
     let rowCount = 0
 
     switch (type) {

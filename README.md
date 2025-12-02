@@ -78,7 +78,6 @@ Agile teams waste hours after sprint ceremonies turning loosely phrased discussi
 # ScrumBot - AI-Powered Sprint Planning Assistant
 
 ScrumBot converts meeting transcripts into structured Scrum artifacts and uses AI to recommend optimal story owners based on team skills, capacity, and preferences.
-You can access the presentation upto checkpoint 3 in Scrumbot.pdf
 
 ## Features
 
@@ -100,7 +99,7 @@ You can access the presentation upto checkpoint 3 in Scrumbot.pdf
    \`\`\`
 
 2. **Set up environment variables**:
-   The Groq API key is already configured in `environment.env`. If you need to change it, update:
+   The Groq API key is already configured in `.env.local`. If you need to change it, update:
    \`\`\`
    GROQ_API_KEY=your_groq_api_key_here
    \`\`\`

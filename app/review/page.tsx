@@ -10,6 +10,7 @@ import { StoryCard } from "@/components/story-card"
 import { WeightTuner } from "@/components/weight-tuner"
 import { WorkloadSummary } from "@/components/workload-summary"
 import { rankMembersWithAI } from "@/lib/aiRank"
+import { StoryDependencies } from "@/components/story-dependencies"
 
 export default function ReviewPage() {
   const router = useRouter()
@@ -83,6 +84,7 @@ export default function ReviewPage() {
               </p>
             </div>
             <div className="flex gap-2">
+              <StoryDependencies stories={stories} />
               <Button onClick={handleReRank} variant="outline" size="sm">
                 <RefreshCw className="h-4 w-4 mr-2" />
                 Re-rank

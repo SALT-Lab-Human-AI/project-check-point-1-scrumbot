@@ -127,32 +127,32 @@ export const DEMO_KB: TeamKB = {
 export const DEMO_TRANSCRIPT: TranscriptSegment[] = [
   {
     timestamp: "00:00:15.000",
-    speaker: "Product Manager",
+    speaker: "Alice Chen",
     text: "We need to build a user dashboard where customers can see their order history.",
   },
   {
     timestamp: "00:00:32.500",
-    speaker: "Designer",
+    speaker: "Bob Martinez",
     text: "I think we should include filters for date range and order status.",
   },
   {
     timestamp: "00:01:05.200",
-    speaker: "Tech Lead",
+    speaker: "David Okonkwo",
     text: "We will need to integrate with the orders API and handle pagination.",
   },
   {
     timestamp: "00:01:45.800",
-    speaker: "Product Manager",
+    speaker: "Alice Chen",
     text: "Also, users should be able to export their order history as CSV.",
   },
   {
     timestamp: "00:02:20.000",
-    speaker: "Designer",
+    speaker: "Carol Kim",
     text: "For the settings page, users need to update their profile information and notification preferences.",
   },
   {
     timestamp: "00:03:10.500",
-    speaker: "Tech Lead",
+    speaker: "Emma Rodriguez",
     text: "The notification preferences should sync with our email service provider.",
   },
 ]
@@ -170,12 +170,12 @@ export function makeDemoStories(): Omit<StoryWithSuggestions, "suggestions">[] {
       evidence: [
         {
           timestamp: "00:00:15.000",
-          speaker: "Product Manager",
+          speaker: "Alice Chen",
           quote: "We need to build a user dashboard where customers can see their order history.",
         },
         {
           timestamp: "00:00:32.500",
-          speaker: "Designer",
+          speaker: "Bob Martinez",
           quote: "I think we should include filters for date range and order status.",
         },
       ],
@@ -193,7 +193,7 @@ export function makeDemoStories(): Omit<StoryWithSuggestions, "suggestions">[] {
       evidence: [
         {
           timestamp: "00:01:45.800",
-          speaker: "Product Manager",
+          speaker: "Alice Chen",
           quote: "Also, users should be able to export their order history as CSV.",
         },
       ],
@@ -211,12 +211,12 @@ export function makeDemoStories(): Omit<StoryWithSuggestions, "suggestions">[] {
       evidence: [
         {
           timestamp: "00:02:20.000",
-          speaker: "Designer",
+          speaker: "Carol Kim",
           quote: "For the settings page, users need to update their profile information and notification preferences.",
         },
         {
           timestamp: "00:03:10.500",
-          speaker: "Tech Lead",
+          speaker: "Emma Rodriguez",
           quote: "The notification preferences should sync with our email service provider.",
         },
       ],
