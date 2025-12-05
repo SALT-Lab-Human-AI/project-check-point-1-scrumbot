@@ -1,0 +1,148 @@
+WEBVTT
+
+00:00:00.000 --> 00:00:04.000
+Jordan Patel: Today’s focus: dark mode theming.
+
+00:00:03.000 --> 00:00:08.000
+Avery Kim: Any blockers from last time?
+
+00:00:06.000 --> 00:00:13.000
+Noah Williams: Let’s aim for a concrete owner and rollout plan.
+
+00:00:11.000 --> 00:00:15.000
+Noah Williams: Risk: flaky tests for dark mode theming.
+
+00:00:15.000 --> 00:00:20.000
+Samira López: UX needs a final pass on dark mode theming.
+
+00:00:20.000 --> 00:00:24.000
+Jordan Patel: I think we split dark mode theming into two subtasks.
+
+00:00:22.000 --> 00:00:29.000
+Riley Chen: Risk: accessibility gaps for dark mode theming.
+
+00:00:27.000 --> 00:00:31.000
+Samira López: Let’s not block on dark mode theming; start with a spike.
+
+00:00:30.000 --> 00:00:37.000
+Riley Chen: I propose we split dark mode theming into two subtasks.
+
+00:00:35.000 --> 00:00:39.000
+Samira López: Let’s not block on dark mode theming; start with a spike.
+
+00:00:39.000 --> 00:00:45.000
+Riley Chen: Action: set up dashboards.
+
+00:00:45.000 --> 00:00:48.000
+Riley Chen: UX needs a final pass on dark mode theming.
+
+00:00:48.000 --> 00:00:52.000
+Riley Chen: My take is we split dark mode theming into two subtasks.
+
+00:00:52.000 --> 00:00:58.000
+Samira López: Action: write migration.
+
+00:00:57.000 --> 00:01:02.000
+Avery Kim: My take is we split dark mode theming into two subtasks.
+
+00:01:02.000 --> 00:01:07.000
+Avery Kim: Action: create test plan.
+
+00:01:06.000 --> 00:01:10.000
+Samira López: Let’s not block on dark mode theming; start with a spike.
+
+00:01:10.000 --> 00:01:13.000
+Avery Kim: Let’s not block on dark mode theming; ship a thin slice.
+
+00:01:13.000 --> 00:01:19.000
+Samira López: I think we split dark mode theming into two subtasks.
+
+00:01:17.000 --> 00:01:21.000
+Priya Singh: My take is we split dark mode theming into two subtasks.
+
+00:01:21.000 --> 00:01:26.000
+Jordan Patel: I propose we split dark mode theming into two subtasks.
+
+00:01:26.000 --> 00:01:32.000
+Avery Kim: Action: write migration.
+
+00:01:31.000 --> 00:01:38.000
+Riley Chen: Infra-wise, Coordinate with SRE for rollout.
+
+00:01:38.000 --> 00:01:42.000
+Riley Chen: Action: book design review.
+
+00:01:42.000 --> 00:01:47.000
+Samira López: Let’s not block on dark mode theming; start with a spike.
+
+00:01:46.000 --> 00:01:53.000
+Jordan Patel: Let’s capture action items clearly on dark mode theming.
+
+00:01:52.000 --> 00:01:57.000
+Avery Kim: UX needs a final pass on dark mode theming.
+
+00:01:57.000 --> 00:02:01.000
+Riley Chen: Let’s not block on dark mode theming; ship a thin slice.
+
+00:02:01.000 --> 00:02:07.000
+Priya Singh: Action: write migration.
+
+00:02:05.000 --> 00:02:10.000
+Jordan Patel: Action: write migration.
+
+00:02:09.000 --> 00:02:16.000
+Noah Williams: From design side, Performance baseline needs to be recorded.
+
+00:02:16.000 --> 00:02:20.000
+Samira López: Edge cases around auth and retries on dark mode theming.
+
+00:02:20.000 --> 00:02:24.000
+Avery Kim: From design side, We might need a migration.
+
+00:02:23.000 --> 00:02:29.000
+Avery Kim: Any risks we’re missing? on dark mode theming.
+
+00:02:29.000 --> 00:02:36.000
+Jordan Patel: Let’s not block on dark mode theming; start with a spike.
+
+00:02:36.000 --> 00:02:42.000
+Samira López: Risk: accessibility gaps for dark mode theming.
+
+00:02:42.000 --> 00:02:49.000
+Samira López: My take is we split dark mode theming into two subtasks.
+
+00:02:49.000 --> 00:02:56.000
+Jordan Patel: From design side, We might need a migration.
+
+00:02:55.000 --> 00:03:01.000
+Noah Williams: Let’s clarify acceptance criteria on dark mode theming.
+
+00:03:01.000 --> 00:03:06.000
+Jordan Patel: Any risks we’re missing? on dark mode theming.
+
+00:03:05.000 --> 00:03:12.000
+Riley Chen: Action: set up dashboards.
+
+00:03:11.000 --> 00:03:16.000
+Priya Singh: Risk: accessibility gaps for dark mode theming.
+
+00:03:16.000 --> 00:03:20.000
+Riley Chen: I propose we split dark mode theming into two subtasks.
+
+00:03:20.000 --> 00:03:25.000
+Samira López: Infra-wise, Specifically for dark mode theming.
+
+00:03:24.000 --> 00:03:28.000
+Priya Singh: Risk: data migration for dark mode theming.
+
+00:03:28.000 --> 00:03:34.000
+Avery Kim: Let’s not block on dark mode theming; start with a spike.
+
+00:03:33.000 --> 00:03:40.000
+Priya Singh: Okay, who can take ownership?
+
+00:03:39.000 --> 00:03:44.000
+Avery Kim: Let’s finalize target date in Jira after this.
+
+00:03:43.000 --> 00:04:59.999
+Samira López: We’ll review outcomes in the next standup.

@@ -1,0 +1,142 @@
+WEBVTT
+
+00:00:00.000 --> 00:00:06.000
+Priya Singh: Today’s focus: checkout redesign.
+
+00:00:04.000 --> 00:00:10.000
+Riley Chen: Any blockers from last time?
+
+00:00:09.000 --> 00:00:17.000
+Riley Chen: Let’s aim for a concrete owner and rollout plan.
+
+00:00:16.000 --> 00:00:22.000
+Avery Kim: I think we split checkout redesign into two subtasks.
+
+00:00:20.000 --> 00:00:26.000
+Samira López: Action: book design review.
+
+00:00:26.000 --> 00:00:32.000
+Samira López: Let’s keep this within this sprint on checkout redesign.
+
+00:00:31.000 --> 00:00:37.000
+Avery Kim: Infra-wise, Specifically for checkout redesign.
+
+00:00:35.000 --> 00:00:39.000
+Jordan Patel: Risk: accessibility gaps for checkout redesign.
+
+00:00:39.000 --> 00:00:44.000
+Priya Singh: I think we split checkout redesign into two subtasks.
+
+00:00:44.000 --> 00:00:48.000
+Avery Kim: Any risks we’re missing? on checkout redesign.
+
+00:00:48.000 --> 00:00:55.000
+Avery Kim: I think we split checkout redesign into two subtasks.
+
+00:00:53.000 --> 00:00:59.000
+Riley Chen: I think we split checkout redesign into two subtasks.
+
+00:00:59.000 --> 00:01:06.000
+Avery Kim: Action: set up dashboards.
+
+00:01:05.000 --> 00:01:09.000
+Jordan Patel: From design side, We can chunk work behind a ticket.
+
+00:01:08.000 --> 00:01:13.000
+Priya Singh: Action: write migration.
+
+00:01:11.000 --> 00:01:18.000
+Noah Williams: Let’s not block on checkout redesign; start with a spike.
+
+00:01:18.000 --> 00:01:22.000
+Jordan Patel: Risk: scope creep for checkout redesign.
+
+00:01:21.000 --> 00:01:23.000
+Riley Chen: Infra-wise, Specifically for checkout redesign.
+
+00:01:23.000 --> 00:01:25.000
+Jordan Patel: Risk: scope creep for checkout redesign.
+
+00:01:24.000 --> 00:01:28.000
+Jordan Patel: Action: create test plan.
+
+00:01:28.000 --> 00:01:34.000
+Samira López: My take is we split checkout redesign into two subtasks.
+
+00:01:33.000 --> 00:01:38.000
+Riley Chen: We need to timebox the spike on checkout redesign.
+
+00:01:38.000 --> 00:01:41.000
+Avery Kim: Infra-wise, UX needs a final pass.
+
+00:01:40.000 --> 00:01:44.000
+Avery Kim: We need to timebox the spike on checkout redesign.
+
+00:01:43.000 --> 00:01:50.000
+Avery Kim: Action: create test plan.
+
+00:01:49.000 --> 00:01:54.000
+Samira López: Action: write migration.
+
+00:01:53.000 --> 00:02:00.000
+Priya Singh: Let’s not block on checkout redesign; parallelize testing.
+
+00:01:58.000 --> 00:02:00.000
+Samira López: Observability dashboards for errors on checkout redesign.
+
+00:02:00.000 --> 00:02:04.000
+Riley Chen: Risk: flaky tests for checkout redesign.
+
+00:02:04.000 --> 00:02:11.000
+Noah Williams: Let’s not block on checkout redesign; parallelize testing.
+
+00:02:10.000 --> 00:02:16.000
+Riley Chen: Risk: accessibility gaps for checkout redesign.
+
+00:02:14.000 --> 00:02:17.000
+Noah Williams: Let’s not block on checkout redesign; ship a thin slice.
+
+00:02:16.000 --> 00:02:19.000
+Samira López: I think we split checkout redesign into two subtasks.
+
+00:02:18.000 --> 00:02:24.000
+Noah Williams: From design side, Design feedback is pending.
+
+00:02:22.000 --> 00:02:28.000
+Samira López: Any risks we’re missing? on checkout redesign.
+
+00:02:28.000 --> 00:02:35.000
+Priya Singh: Action: set up dashboards.
+
+00:02:35.000 --> 00:02:38.000
+Avery Kim: We need to timebox the spike on checkout redesign.
+
+00:02:37.000 --> 00:02:44.000
+Samira López: Let’s not block on checkout redesign; parallelize testing.
+
+00:02:43.000 --> 00:02:49.000
+Avery Kim: Risk: flaky tests for checkout redesign.
+
+00:02:48.000 --> 00:02:51.000
+Priya Singh: Risk: flaky tests for checkout redesign.
+
+00:02:51.000 --> 00:02:56.000
+Jordan Patel: I propose we split checkout redesign into two subtasks.
+
+00:02:56.000 --> 00:03:00.000
+Noah Williams: I propose we split checkout redesign into two subtasks.
+
+00:03:00.000 --> 00:03:03.000
+Jordan Patel: From design side, We might need a migration.
+
+00:03:03.000 --> 00:03:09.000
+Jordan Patel: Let’s not block on checkout redesign; start with a spike.
+
+00:03:07.000 --> 00:03:15.000
+Priya Singh: Okay, who can take ownership?
+
+00:03:14.000 --> 00:03:18.000
+Samira López: Let’s finalize target date in Jira after this.
+
+00:03:17.000 --> 00:04:59.999
+Samira López: We’ll review outcomes in the next standup.

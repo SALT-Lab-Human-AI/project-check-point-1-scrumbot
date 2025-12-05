@@ -1,0 +1,130 @@
+WEBVTT
+
+00:00:00.000 --> 00:00:06.000
+Priya Singh: Today’s focus: notification digest emails.
+
+00:00:04.000 --> 00:00:09.000
+Jordan Patel: Any blockers from last time?
+
+00:00:07.000 --> 00:00:12.000
+Jordan Patel: Let’s aim for a concrete owner and rollout plan.
+
+00:00:11.000 --> 00:00:17.000
+Priya Singh: Infra-wise, Specifically for notification digest emails.
+
+00:00:16.000 --> 00:00:19.000
+Avery Kim: Let’s not block on notification digest emails; start with a spike.
+
+00:00:19.000 --> 00:00:22.000
+Priya Singh: From design side, Design feedback is pending.
+
+00:00:20.000 --> 00:00:27.000
+Jordan Patel: Risk: scope creep for notification digest emails.
+
+00:00:27.000 --> 00:00:33.000
+Noah Williams: We’ll need QA test cases listed on notification digest emails.
+
+00:00:31.000 --> 00:00:37.000
+Priya Singh: Any risks we’re missing? on notification digest emails.
+
+00:00:36.000 --> 00:00:42.000
+Avery Kim: Action: write migration.
+
+00:00:42.000 --> 00:00:47.000
+Noah Williams: I think we split notification digest emails into two subtasks.
+
+00:00:47.000 --> 00:00:51.000
+Avery Kim: Let’s not block on notification digest emails; ship a thin slice.
+
+00:00:50.000 --> 00:00:56.000
+Avery Kim: I propose we split notification digest emails into two subtasks.
+
+00:00:54.000 --> 00:00:58.000
+Noah Williams: Risk: scope creep for notification digest emails.
+
+00:00:58.000 --> 00:01:05.000
+Riley Chen: We’ll need QA test cases listed on notification digest emails.
+
+00:01:05.000 --> 00:01:08.000
+Samira López: Action: book design review.
+
+00:01:08.000 --> 00:01:12.000
+Avery Kim: Let’s not block on notification digest emails; start with a spike.
+
+00:01:12.000 --> 00:01:18.000
+Noah Williams: Observability dashboards for errors on notification digest emails.
+
+00:01:18.000 --> 00:01:23.000
+Samira López: Infra-wise, Tests should cover unhappy paths.
+
+00:01:23.000 --> 00:01:28.000
+Riley Chen: I think we split notification digest emails into two subtasks.
+
+00:01:26.000 --> 00:01:32.000
+Noah Williams: From design side, Security review is likely.
+
+00:01:32.000 --> 00:01:39.000
+Riley Chen: Infra-wise, We will stage it behind a feature flag.
+
+00:01:39.000 --> 00:01:45.000
+Samira López: Edge cases around auth and retries on notification digest emails.
+
+00:01:44.000 --> 00:01:51.000
+Riley Chen: Risk: scope creep for notification digest emails.
+
+00:01:51.000 --> 00:01:58.000
+Riley Chen: Let’s not block on notification digest emails; parallelize testing.
+
+00:01:56.000 --> 00:02:02.000
+Avery Kim: I think we split notification digest emails into two subtasks.
+
+00:02:02.000 --> 00:02:07.000
+Samira López: Edge cases around auth and retries on notification digest emails.
+
+00:02:05.000 --> 00:02:10.000
+Jordan Patel: Risk: data migration for notification digest emails.
+
+00:02:10.000 --> 00:02:14.000
+Avery Kim: Let’s not block on notification digest emails; parallelize testing.
+
+00:02:14.000 --> 00:02:21.000
+Avery Kim: From QA perspective, Specifically for notification digest emails.
+
+00:02:19.000 --> 00:02:25.000
+Avery Kim: Let’s not block on notification digest emails; start with a spike.
+
+00:02:23.000 --> 00:02:28.000
+Samira López: Action: set up dashboards.
+
+00:02:27.000 --> 00:02:32.000
+Jordan Patel: I think we split notification digest emails into two subtasks.
+
+00:02:30.000 --> 00:02:37.000
+Priya Singh: We need to timebox the spike on notification digest emails.
+
+00:02:37.000 --> 00:02:42.000
+Jordan Patel: Action: create test plan.
+
+00:02:42.000 --> 00:02:48.000
+Samira López: From QA perspective, Quick update on the scope.
+
+00:02:46.000 --> 00:02:49.000
+Jordan Patel: Infra-wise, Design feedback is pending.
+
+00:02:49.000 --> 00:02:51.000
+Noah Williams: From QA perspective, We might need a migration.
+
+00:02:51.000 --> 00:02:55.000
+Priya Singh: Observability dashboards for errors on notification digest emails.
+
+00:02:53.000 --> 00:03:00.000
+Priya Singh: Infra-wise, We can chunk work behind a ticket.
+
+00:02:59.000 --> 00:03:05.000
+Priya Singh: Okay, who can take ownership?
+
+00:03:04.000 --> 00:03:11.000
+Riley Chen: Let’s finalize target date in Jira after this.
+
+00:03:10.000 --> 00:04:59.999
+Jordan Patel: We’ll review outcomes in the next standup.

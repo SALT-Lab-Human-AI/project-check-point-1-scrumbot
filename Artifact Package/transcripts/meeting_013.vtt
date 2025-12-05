@@ -1,0 +1,181 @@
+WEBVTT
+
+00:00:00.000 --> 00:00:06.000
+Samira López: Today’s focus: accessibility audit fixes.
+
+00:00:05.000 --> 00:00:10.000
+Jordan Patel: Any blockers from last time?
+
+00:00:09.000 --> 00:00:14.000
+Jordan Patel: Let’s aim for a concrete owner and rollout plan.
+
+00:00:12.000 --> 00:00:19.000
+Riley Chen: I propose we split accessibility audit fixes into two subtasks.
+
+00:00:17.000 --> 00:00:24.000
+Priya Singh: Let’s not block on accessibility audit fixes; ship a thin slice.
+
+00:00:22.000 --> 00:00:29.000
+Samira López: Risk: data migration for accessibility audit fixes.
+
+00:00:28.000 --> 00:00:35.000
+Avery Kim: Let’s not block on accessibility audit fixes; parallelize testing.
+
+00:00:35.000 --> 00:00:42.000
+Jordan Patel: Let’s keep this within this sprint on accessibility audit fixes.
+
+00:00:43.000 --> 00:00:46.000
+Priya Singh: Risk: flaky tests for accessibility audit fixes.
+
+00:00:46.000 --> 00:00:48.000
+Priya Singh: From QA perspective, We might need a migration.
+
+00:00:48.000 --> 00:00:55.000
+Samira López: I propose we split accessibility audit fixes into two subtasks.
+
+00:00:54.000 --> 00:01:00.000
+Jordan Patel: I propose we split accessibility audit fixes into two subtasks.
+
+00:00:59.000 --> 00:01:05.000
+Priya Singh: Let’s not block on accessibility audit fixes; start with a spike.
+
+00:01:05.000 --> 00:01:09.000
+Samira López: We need to timebox the spike on accessibility audit fixes.
+
+00:01:09.000 --> 00:01:15.000
+Avery Kim: My take is we split accessibility audit fixes into two subtasks.
+
+00:01:13.000 --> 00:01:19.000
+Noah Williams: Let’s keep this within this sprint on accessibility audit fixes.
+
+00:01:17.000 --> 00:01:24.000
+Avery Kim: Risk: accessibility gaps for accessibility audit fixes.
+
+00:01:25.000 --> 00:01:31.000
+Samira López: Risk: scope creep for accessibility audit fixes.
+
+00:01:31.000 --> 00:01:37.000
+Avery Kim: Action: write migration.
+
+00:01:35.000 --> 00:01:42.000
+Priya Singh: Risk: scope creep for accessibility audit fixes.
+
+00:01:40.000 --> 00:01:43.000
+Noah Williams: Let’s not block on accessibility audit fixes; ship a thin slice.
+
+00:01:43.000 --> 00:01:50.000
+Avery Kim: Risk: flaky tests for accessibility audit fixes.
+
+00:01:51.000 --> 00:01:58.000
+Samira López: Risk: scope creep for accessibility audit fixes.
+
+00:01:57.000 --> 00:02:03.000
+Avery Kim: I propose we split accessibility audit fixes into two subtasks.
+
+00:02:01.000 --> 00:02:08.000
+Priya Singh: I think we split accessibility audit fixes into two subtasks.
+
+00:02:07.000 --> 00:02:11.000
+Riley Chen: Action: create test plan.
+
+00:02:11.000 --> 00:02:18.000
+Riley Chen: We should add a feature flag on accessibility audit fixes.
+
+00:02:17.000 --> 00:02:21.000
+Priya Singh: From QA perspective, We need to align with capacity.
+
+00:02:19.000 --> 00:02:22.000
+Samira López: My take is we split accessibility audit fixes into two subtasks.
+
+00:02:21.000 --> 00:02:27.000
+Avery Kim: Risk: accessibility gaps for accessibility audit fixes.
+
+00:02:25.000 --> 00:02:29.000
+Avery Kim: Observability dashboards for errors on accessibility audit fixes.
+
+00:02:28.000 --> 00:02:34.000
+Samira López: Let’s not block on accessibility audit fixes; ship a thin slice.
+
+00:02:32.000 --> 00:02:39.000
+Noah Williams: Let’s not block on accessibility audit fixes; parallelize testing.
+
+00:02:39.000 --> 00:02:45.000
+Priya Singh: Risk: flaky tests for accessibility audit fixes.
+
+00:02:43.000 --> 00:02:48.000
+Priya Singh: I propose we split accessibility audit fixes into two subtasks.
+
+00:02:47.000 --> 00:02:50.000
+Riley Chen: Risk: data migration for accessibility audit fixes.
+
+00:02:50.000 --> 00:02:55.000
+Avery Kim: Risk: data migration for accessibility audit fixes.
+
+00:02:53.000 --> 00:02:58.000
+Priya Singh: Risk: flaky tests for accessibility audit fixes.
+
+00:02:57.000 --> 00:03:02.000
+Priya Singh: We should add a feature flag on accessibility audit fixes.
+
+00:03:01.000 --> 00:03:08.000
+Avery Kim: Let’s not block on accessibility audit fixes; ship a thin slice.
+
+00:03:09.000 --> 00:03:13.000
+Priya Singh: Let’s not block on accessibility audit fixes; parallelize testing.
+
+00:03:13.000 --> 00:03:16.000
+Riley Chen: Let’s not block on accessibility audit fixes; ship a thin slice.
+
+00:03:15.000 --> 00:03:22.000
+Samira López: Action: set up dashboards.
+
+00:03:21.000 --> 00:03:24.000
+Noah Williams: Let’s not block on accessibility audit fixes; start with a spike.
+
+00:03:24.000 --> 00:03:29.000
+Avery Kim: My take is we split accessibility audit fixes into two subtasks.
+
+00:03:29.000 --> 00:03:36.000
+Priya Singh: Let’s not block on accessibility audit fixes; ship a thin slice.
+
+00:03:34.000 --> 00:03:40.000
+Avery Kim: Let’s not block on accessibility audit fixes; ship a thin slice.
+
+00:03:40.000 --> 00:03:44.000
+Avery Kim: Risk: flaky tests for accessibility audit fixes.
+
+00:03:44.000 --> 00:03:47.000
+Priya Singh: Edge cases around auth and retries on accessibility audit fixes.
+
+00:03:47.000 --> 00:03:54.000
+Noah Williams: Risk: flaky tests for accessibility audit fixes.
+
+00:03:54.000 --> 00:03:59.000
+Samira López: UX needs a final pass on accessibility audit fixes.
+
+00:03:58.000 --> 00:04:04.000
+Jordan Patel: From design side, Performance baseline needs to be recorded.
+
+00:04:03.000 --> 00:04:09.000
+Riley Chen: Action: book design review.
+
+00:04:08.000 --> 00:04:13.000
+Avery Kim: UX needs a final pass on accessibility audit fixes.
+
+00:04:13.000 --> 00:04:19.000
+Noah Williams: My take is we split accessibility audit fixes into two subtasks.
+
+00:04:19.000 --> 00:04:21.000
+Priya Singh: Risk: accessibility gaps for accessibility audit fixes.
+
+00:04:21.000 --> 00:04:28.000
+Noah Williams: Infra-wise, Specifically for accessibility audit fixes.
+
+00:04:26.000 --> 00:04:29.000
+Avery Kim: Okay, who can take ownership?
+
+00:04:28.000 --> 00:04:33.000
+Priya Singh: Let’s finalize target date in Jira after this.
+
+00:04:32.000 --> 00:04:59.999
+Jordan Patel: We’ll review outcomes in the next standup.

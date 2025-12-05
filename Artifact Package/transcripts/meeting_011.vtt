@@ -1,0 +1,142 @@
+WEBVTT
+
+00:00:00.000 --> 00:00:07.000
+Samira López: Today’s focus: incident postmortem action items.
+
+00:00:05.000 --> 00:00:12.000
+Avery Kim: Any blockers from last time?
+
+00:00:10.000 --> 00:00:17.000
+Avery Kim: Let’s aim for a concrete owner and rollout plan.
+
+00:00:15.000 --> 00:00:20.000
+Samira López: Observability dashboards for errors on incident postmortem action items.
+
+00:00:19.000 --> 00:00:24.000
+Riley Chen: We need to timebox the spike on incident postmortem action items.
+
+00:00:24.000 --> 00:00:30.000
+Riley Chen: Action: write migration.
+
+00:00:30.000 --> 00:00:35.000
+Avery Kim: From QA perspective, Performance baseline needs to be recorded.
+
+00:00:35.000 --> 00:00:41.000
+Jordan Patel: Let’s not block on incident postmortem action items; start with a spike.
+
+00:00:41.000 --> 00:00:48.000
+Priya Singh: Risk: scope creep for incident postmortem action items.
+
+00:00:47.000 --> 00:00:54.000
+Avery Kim: Risk: data migration for incident postmortem action items.
+
+00:00:52.000 --> 00:00:56.000
+Riley Chen: Let’s not block on incident postmortem action items; ship a thin slice.
+
+00:00:56.000 --> 00:01:00.000
+Avery Kim: My take is we split incident postmortem action items into two subtasks.
+
+00:00:59.000 --> 00:01:03.000
+Riley Chen: Infra-wise, We need to align with capacity.
+
+00:01:02.000 --> 00:01:09.000
+Riley Chen: Let’s keep this within this sprint on incident postmortem action items.
+
+00:01:10.000 --> 00:01:16.000
+Samira López: I think we split incident postmortem action items into two subtasks.
+
+00:01:15.000 --> 00:01:19.000
+Riley Chen: Action: book design review.
+
+00:01:19.000 --> 00:01:24.000
+Noah Williams: Edge cases around auth and retries on incident postmortem action items.
+
+00:01:24.000 --> 00:01:29.000
+Priya Singh: Risk: scope creep for incident postmortem action items.
+
+00:01:27.000 --> 00:01:30.000
+Avery Kim: Risk: accessibility gaps for incident postmortem action items.
+
+00:01:28.000 --> 00:01:32.000
+Priya Singh: I propose we split incident postmortem action items into two subtasks.
+
+00:01:30.000 --> 00:01:36.000
+Jordan Patel: From QA perspective, Security review is likely.
+
+00:01:35.000 --> 00:01:42.000
+Noah Williams: We’ll need QA test cases listed on incident postmortem action items.
+
+00:01:41.000 --> 00:01:47.000
+Riley Chen: Any risks we’re missing? on incident postmortem action items.
+
+00:01:47.000 --> 00:01:54.000
+Riley Chen: Let’s not block on incident postmortem action items; ship a thin slice.
+
+00:01:53.000 --> 00:01:59.000
+Riley Chen: From design side, Quick update on the scope.
+
+00:01:57.000 --> 00:02:04.000
+Riley Chen: I propose we split incident postmortem action items into two subtasks.
+
+00:02:03.000 --> 00:02:06.000
+Jordan Patel: Let’s not block on incident postmortem action items; ship a thin slice.
+
+00:02:06.000 --> 00:02:11.000
+Riley Chen: My take is we split incident postmortem action items into two subtasks.
+
+00:02:11.000 --> 00:02:15.000
+Jordan Patel: Risk: accessibility gaps for incident postmortem action items.
+
+00:02:15.000 --> 00:02:18.000
+Priya Singh: Let’s not block on incident postmortem action items; parallelize testing.
+
+00:02:17.000 --> 00:02:22.000
+Jordan Patel: Let’s not block on incident postmortem action items; ship a thin slice.
+
+00:02:20.000 --> 00:02:25.000
+Samira López: Action: write migration.
+
+00:02:25.000 --> 00:02:30.000
+Noah Williams: I think we split incident postmortem action items into two subtasks.
+
+00:02:30.000 --> 00:02:35.000
+Avery Kim: Let’s not block on incident postmortem action items; parallelize testing.
+
+00:02:34.000 --> 00:02:41.000
+Samira López: From design side, We will stage it behind a feature flag.
+
+00:02:41.000 --> 00:02:48.000
+Noah Williams: Coordinate with SRE for rollout on incident postmortem action items.
+
+00:02:47.000 --> 00:02:53.000
+Priya Singh: Risk: scope creep for incident postmortem action items.
+
+00:02:51.000 --> 00:02:58.000
+Samira López: I propose we split incident postmortem action items into two subtasks.
+
+00:02:57.000 --> 00:03:02.000
+Noah Williams: Risk: data migration for incident postmortem action items.
+
+00:03:01.000 --> 00:03:07.000
+Jordan Patel: I propose we split incident postmortem action items into two subtasks.
+
+00:03:07.000 --> 00:03:12.000
+Jordan Patel: I think we split incident postmortem action items into two subtasks.
+
+00:03:12.000 --> 00:03:18.000
+Avery Kim: Risk: scope creep for incident postmortem action items.
+
+00:03:17.000 --> 00:03:21.000
+Priya Singh: Let’s not block on incident postmortem action items; ship a thin slice.
+
+00:03:20.000 --> 00:03:26.000
+Samira López: Risk: scope creep for incident postmortem action items.
+
+00:03:26.000 --> 00:03:32.000
+Noah Williams: Okay, who can take ownership?
+
+00:03:31.000 --> 00:03:38.000
+Jordan Patel: Let’s finalize target date in Jira after this.
+
+00:03:37.000 --> 00:04:59.999
+Noah Williams: We’ll review outcomes in the next standup.

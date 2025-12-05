@@ -1,0 +1,163 @@
+WEBVTT
+
+00:00:00.000 --> 00:00:04.000
+Noah Williams: Today’s focus: load testing for Black Friday.
+
+00:00:03.000 --> 00:00:09.000
+Avery Kim: Any blockers from last time?
+
+00:00:08.000 --> 00:00:14.000
+Jordan Patel: Let’s aim for a concrete owner and rollout plan.
+
+00:00:13.000 --> 00:00:18.000
+Noah Williams: I think we split load testing for Black Friday into two subtasks.
+
+00:00:16.000 --> 00:00:21.000
+Avery Kim: Action: book design review.
+
+00:00:21.000 --> 00:00:24.000
+Noah Williams: We’ll need QA test cases listed on load testing for Black Friday.
+
+00:00:24.000 --> 00:00:28.000
+Samira López: Let’s not block on load testing for Black Friday; start with a spike.
+
+00:00:27.000 --> 00:00:34.000
+Riley Chen: Let’s keep this within this sprint on load testing for Black Friday.
+
+00:00:35.000 --> 00:00:38.000
+Noah Williams: Infra-wise, We need to align with capacity.
+
+00:00:37.000 --> 00:00:42.000
+Priya Singh: Edge cases around auth and retries on load testing for Black Friday.
+
+00:00:42.000 --> 00:00:49.000
+Noah Williams: Let’s not block on load testing for Black Friday; ship a thin slice.
+
+00:00:48.000 --> 00:00:54.000
+Noah Williams: Let’s not block on load testing for Black Friday; parallelize testing.
+
+00:00:53.000 --> 00:00:57.000
+Priya Singh: Let’s not block on load testing for Black Friday; start with a spike.
+
+00:00:57.000 --> 00:01:03.000
+Jordan Patel: Action: set up dashboards.
+
+00:01:03.000 --> 00:01:09.000
+Jordan Patel: From QA perspective, Specifically for load testing for Black Friday.
+
+00:01:07.000 --> 00:01:14.000
+Samira López: We should add a feature flag on load testing for Black Friday.
+
+00:01:12.000 --> 00:01:18.000
+Riley Chen: Action: book design review.
+
+00:01:17.000 --> 00:01:24.000
+Riley Chen: I propose we split load testing for Black Friday into two subtasks.
+
+00:01:24.000 --> 00:01:29.000
+Riley Chen: From QA perspective, Security review is likely.
+
+00:01:27.000 --> 00:01:33.000
+Jordan Patel: From design side, We can chunk work behind a ticket.
+
+00:01:31.000 --> 00:01:38.000
+Samira López: Risk: scope creep for load testing for Black Friday.
+
+00:01:39.000 --> 00:01:46.000
+Jordan Patel: Let’s clarify acceptance criteria on load testing for Black Friday.
+
+00:01:47.000 --> 00:01:54.000
+Jordan Patel: Observability dashboards for errors on load testing for Black Friday.
+
+00:01:52.000 --> 00:01:58.000
+Priya Singh: Action: book design review.
+
+00:01:56.000 --> 00:01:59.000
+Samira López: Infra-wise, We might need a migration.
+
+00:01:59.000 --> 00:02:06.000
+Samira López: I propose we split load testing for Black Friday into two subtasks.
+
+00:02:06.000 --> 00:02:12.000
+Riley Chen: I think we split load testing for Black Friday into two subtasks.
+
+00:02:11.000 --> 00:02:15.000
+Avery Kim: I propose we split load testing for Black Friday into two subtasks.
+
+00:02:15.000 --> 00:02:22.000
+Jordan Patel: Let’s not block on load testing for Black Friday; start with a spike.
+
+00:02:23.000 --> 00:02:30.000
+Samira López: Let’s not block on load testing for Black Friday; start with a spike.
+
+00:02:30.000 --> 00:02:35.000
+Riley Chen: Let’s not block on load testing for Black Friday; ship a thin slice.
+
+00:02:35.000 --> 00:02:41.000
+Jordan Patel: I propose we split load testing for Black Friday into two subtasks.
+
+00:02:39.000 --> 00:02:43.000
+Riley Chen: I think we split load testing for Black Friday into two subtasks.
+
+00:02:42.000 --> 00:02:47.000
+Priya Singh: Action: create test plan.
+
+00:02:47.000 --> 00:02:54.000
+Priya Singh: From design side, Design feedback is pending.
+
+00:02:53.000 --> 00:02:58.000
+Noah Williams: My take is we split load testing for Black Friday into two subtasks.
+
+00:02:56.000 --> 00:03:02.000
+Jordan Patel: From QA perspective, We need to align with capacity.
+
+00:03:00.000 --> 00:03:07.000
+Avery Kim: Infra-wise, Performance baseline needs to be recorded.
+
+00:03:05.000 --> 00:03:12.000
+Jordan Patel: UX needs a final pass on load testing for Black Friday.
+
+00:03:10.000 --> 00:03:16.000
+Noah Williams: Action: set up dashboards.
+
+00:03:16.000 --> 00:03:20.000
+Noah Williams: Action: book design review.
+
+00:03:20.000 --> 00:03:27.000
+Avery Kim: Let’s not block on load testing for Black Friday; ship a thin slice.
+
+00:03:26.000 --> 00:03:31.000
+Jordan Patel: Action: write migration.
+
+00:03:29.000 --> 00:03:35.000
+Riley Chen: From design side, Security review is likely.
+
+00:03:35.000 --> 00:03:41.000
+Avery Kim: From design side, We will stage it behind a feature flag.
+
+00:03:39.000 --> 00:03:42.000
+Samira López: From QA perspective, We might need a migration.
+
+00:03:42.000 --> 00:03:48.000
+Riley Chen: Risk: flaky tests for load testing for Black Friday.
+
+00:03:47.000 --> 00:03:51.000
+Riley Chen: Let’s not block on load testing for Black Friday; ship a thin slice.
+
+00:03:49.000 --> 00:03:52.000
+Samira López: Let’s not block on load testing for Black Friday; ship a thin slice.
+
+00:03:51.000 --> 00:03:55.000
+Priya Singh: From QA perspective, We can chunk work behind a ticket.
+
+00:03:55.000 --> 00:03:59.000
+Noah Williams: Risk: scope creep for load testing for Black Friday.
+
+00:03:58.000 --> 00:04:03.000
+Avery Kim: Okay, who can take ownership?
+
+00:04:02.000 --> 00:04:08.000
+Avery Kim: Let’s finalize target date in Jira after this.
+
+00:04:07.000 --> 00:04:59.999
+Riley Chen: We’ll review outcomes in the next standup.

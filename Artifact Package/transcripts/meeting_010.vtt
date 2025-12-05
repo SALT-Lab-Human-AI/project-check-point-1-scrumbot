@@ -1,0 +1,139 @@
+WEBVTT
+
+00:00:00.000 --> 00:00:07.000
+Priya Singh: Today’s focus: design system button variants.
+
+00:00:05.000 --> 00:00:13.000
+Avery Kim: Any blockers from last time?
+
+00:00:11.000 --> 00:00:17.000
+Avery Kim: Let’s aim for a concrete owner and rollout plan.
+
+00:00:15.000 --> 00:00:22.000
+Samira López: My take is we split design system button variants into two subtasks.
+
+00:00:21.000 --> 00:00:25.000
+Noah Williams: My take is we split design system button variants into two subtasks.
+
+00:00:25.000 --> 00:00:30.000
+Riley Chen: Let’s not block on design system button variants; start with a spike.
+
+00:00:29.000 --> 00:00:34.000
+Priya Singh: Action: create test plan.
+
+00:00:32.000 --> 00:00:39.000
+Priya Singh: Action: write migration.
+
+00:00:37.000 --> 00:00:40.000
+Samira López: Risk: data migration for design system button variants.
+
+00:00:40.000 --> 00:00:44.000
+Samira López: Let’s not block on design system button variants; parallelize testing.
+
+00:00:44.000 --> 00:00:48.000
+Riley Chen: Risk: data migration for design system button variants.
+
+00:00:48.000 --> 00:00:52.000
+Riley Chen: I think we split design system button variants into two subtasks.
+
+00:00:52.000 --> 00:00:57.000
+Noah Williams: Risk: scope creep for design system button variants.
+
+00:00:56.000 --> 00:01:00.000
+Noah Williams: Let’s not block on design system button variants; ship a thin slice.
+
+00:01:00.000 --> 00:01:04.000
+Riley Chen: Action: set up dashboards.
+
+00:01:02.000 --> 00:01:08.000
+Noah Williams: Infra-wise, We will stage it behind a feature flag.
+
+00:01:06.000 --> 00:01:12.000
+Noah Williams: We should add a feature flag on design system button variants.
+
+00:01:10.000 --> 00:01:14.000
+Samira López: Action: create test plan.
+
+00:01:14.000 --> 00:01:17.000
+Riley Chen: Let’s not block on design system button variants; start with a spike.
+
+00:01:15.000 --> 00:01:22.000
+Noah Williams: Let’s not block on design system button variants; parallelize testing.
+
+00:01:20.000 --> 00:01:26.000
+Noah Williams: Any risks we’re missing? on design system button variants.
+
+00:01:24.000 --> 00:01:30.000
+Noah Williams: From QA perspective, Security review is likely.
+
+00:01:28.000 --> 00:01:35.000
+Avery Kim: Risk: data migration for design system button variants.
+
+00:01:34.000 --> 00:01:39.000
+Riley Chen: Let’s not block on design system button variants; parallelize testing.
+
+00:01:38.000 --> 00:01:44.000
+Riley Chen: I propose we split design system button variants into two subtasks.
+
+00:01:43.000 --> 00:01:50.000
+Samira López: Risk: scope creep for design system button variants.
+
+00:01:48.000 --> 00:01:54.000
+Noah Williams: Let’s not block on design system button variants; parallelize testing.
+
+00:01:54.000 --> 00:02:01.000
+Jordan Patel: Risk: scope creep for design system button variants.
+
+00:01:59.000 --> 00:02:05.000
+Avery Kim: Infra-wise, Security review is likely.
+
+00:02:03.000 --> 00:02:04.000
+Noah Williams: Quick update on the scope on design system button variants.
+
+00:02:04.000 --> 00:02:10.000
+Riley Chen: Action: set up dashboards.
+
+00:02:08.000 --> 00:02:12.000
+Riley Chen: Risk: scope creep for design system button variants.
+
+00:02:10.000 --> 00:02:16.000
+Priya Singh: Let’s not block on design system button variants; parallelize testing.
+
+00:02:14.000 --> 00:02:18.000
+Priya Singh: Let’s not block on design system button variants; ship a thin slice.
+
+00:02:16.000 --> 00:02:18.000
+Priya Singh: We should add a feature flag on design system button variants.
+
+00:02:18.000 --> 00:02:24.000
+Noah Williams: UX needs a final pass on design system button variants.
+
+00:02:22.000 --> 00:02:27.000
+Noah Williams: Let’s capture action items clearly on design system button variants.
+
+00:02:27.000 --> 00:02:34.000
+Jordan Patel: Let’s not block on design system button variants; parallelize testing.
+
+00:02:32.000 --> 00:02:38.000
+Jordan Patel: From design side, Specifically for design system button variants.
+
+00:02:37.000 --> 00:02:41.000
+Samira López: My take is we split design system button variants into two subtasks.
+
+00:02:41.000 --> 00:02:44.000
+Jordan Patel: Action: write migration.
+
+00:02:43.000 --> 00:02:49.000
+Avery Kim: We should add a feature flag on design system button variants.
+
+00:02:48.000 --> 00:02:52.000
+Priya Singh: Let’s not block on design system button variants; ship a thin slice.
+
+00:02:52.000 --> 00:03:00.000
+Priya Singh: Okay, who can take ownership?
+
+00:02:59.000 --> 00:03:04.000
+Priya Singh: Let’s finalize target date in Jira after this.
+
+00:03:03.000 --> 00:04:59.999
+Noah Williams: We’ll review outcomes in the next standup.

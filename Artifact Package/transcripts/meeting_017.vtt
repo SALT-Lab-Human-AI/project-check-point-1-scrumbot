@@ -1,0 +1,184 @@
+WEBVTT
+
+00:00:00.000 --> 00:00:05.000
+Priya Singh: Today’s focus: mobile navigation improvements.
+
+00:00:03.000 --> 00:00:08.000
+Avery Kim: Any blockers from last time?
+
+00:00:06.000 --> 00:00:14.000
+Jordan Patel: Let’s aim for a concrete owner and rollout plan.
+
+00:00:13.000 --> 00:00:18.000
+Riley Chen: Action: set up dashboards.
+
+00:00:17.000 --> 00:00:24.000
+Avery Kim: Risk: data migration for mobile navigation improvements.
+
+00:00:23.000 --> 00:00:28.000
+Avery Kim: UX needs a final pass on mobile navigation improvements.
+
+00:00:28.000 --> 00:00:33.000
+Priya Singh: Risk: flaky tests for mobile navigation improvements.
+
+00:00:32.000 --> 00:00:39.000
+Priya Singh: Let’s not block on mobile navigation improvements; parallelize testing.
+
+00:00:39.000 --> 00:00:43.000
+Noah Williams: Risk: accessibility gaps for mobile navigation improvements.
+
+00:00:43.000 --> 00:00:50.000
+Jordan Patel: From design side, Design feedback is pending.
+
+00:00:48.000 --> 00:00:54.000
+Samira López: Action: book design review.
+
+00:00:52.000 --> 00:00:58.000
+Avery Kim: From design side, Design feedback is pending.
+
+00:00:56.000 --> 00:00:57.000
+Avery Kim: Action: write migration.
+
+00:00:57.000 --> 00:01:03.000
+Jordan Patel: Action: set up dashboards.
+
+00:01:01.000 --> 00:01:08.000
+Jordan Patel: Let’s not block on mobile navigation improvements; ship a thin slice.
+
+00:01:08.000 --> 00:01:15.000
+Avery Kim: Let’s not block on mobile navigation improvements; ship a thin slice.
+
+00:01:14.000 --> 00:01:20.000
+Avery Kim: Let’s clarify acceptance criteria on mobile navigation improvements.
+
+00:01:19.000 --> 00:01:26.000
+Noah Williams: My take is we split mobile navigation improvements into two subtasks.
+
+00:01:26.000 --> 00:01:32.000
+Samira López: Risk: accessibility gaps for mobile navigation improvements.
+
+00:01:31.000 --> 00:01:36.000
+Riley Chen: From design side, We need to align with capacity.
+
+00:01:35.000 --> 00:01:42.000
+Jordan Patel: Action: set up dashboards.
+
+00:01:40.000 --> 00:01:46.000
+Jordan Patel: My take is we split mobile navigation improvements into two subtasks.
+
+00:01:44.000 --> 00:01:49.000
+Noah Williams: Action: book design review.
+
+00:01:49.000 --> 00:01:54.000
+Avery Kim: Risk: accessibility gaps for mobile navigation improvements.
+
+00:01:54.000 --> 00:02:00.000
+Jordan Patel: From QA perspective, We need to align with capacity.
+
+00:02:00.000 --> 00:02:05.000
+Riley Chen: Risk: accessibility gaps for mobile navigation improvements.
+
+00:02:04.000 --> 00:02:08.000
+Noah Williams: Infra-wise, Security review is likely.
+
+00:02:08.000 --> 00:02:15.000
+Jordan Patel: Let’s not block on mobile navigation improvements; parallelize testing.
+
+00:02:13.000 --> 00:02:19.000
+Priya Singh: Let’s not block on mobile navigation improvements; start with a spike.
+
+00:02:17.000 --> 00:02:24.000
+Avery Kim: We need to timebox the spike on mobile navigation improvements.
+
+00:02:24.000 --> 00:02:28.000
+Riley Chen: Risk: accessibility gaps for mobile navigation improvements.
+
+00:02:26.000 --> 00:02:29.000
+Avery Kim: My take is we split mobile navigation improvements into two subtasks.
+
+00:02:28.000 --> 00:02:33.000
+Priya Singh: Risk: accessibility gaps for mobile navigation improvements.
+
+00:02:31.000 --> 00:02:38.000
+Noah Williams: Risk: data migration for mobile navigation improvements.
+
+00:02:38.000 --> 00:02:41.000
+Jordan Patel: Risk: flaky tests for mobile navigation improvements.
+
+00:02:41.000 --> 00:02:48.000
+Jordan Patel: Let’s capture action items clearly on mobile navigation improvements.
+
+00:02:47.000 --> 00:02:51.000
+Samira López: Infra-wise, We can chunk work behind a ticket.
+
+00:02:51.000 --> 00:02:58.000
+Priya Singh: Action: set up dashboards.
+
+00:02:58.000 --> 00:03:04.000
+Jordan Patel: Let’s not block on mobile navigation improvements; ship a thin slice.
+
+00:03:02.000 --> 00:03:08.000
+Noah Williams: My take is we split mobile navigation improvements into two subtasks.
+
+00:03:08.000 --> 00:03:13.000
+Riley Chen: Action: write migration.
+
+00:03:13.000 --> 00:03:19.000
+Samira López: Risk: flaky tests for mobile navigation improvements.
+
+00:03:18.000 --> 00:03:22.000
+Riley Chen: I propose we split mobile navigation improvements into two subtasks.
+
+00:03:22.000 --> 00:03:28.000
+Riley Chen: Action: create test plan.
+
+00:03:26.000 --> 00:03:33.000
+Jordan Patel: Let’s not block on mobile navigation improvements; ship a thin slice.
+
+00:03:33.000 --> 00:03:40.000
+Priya Singh: Action: create test plan.
+
+00:03:39.000 --> 00:03:43.000
+Samira López: I think we split mobile navigation improvements into two subtasks.
+
+00:03:43.000 --> 00:03:49.000
+Avery Kim: Let’s clarify acceptance criteria on mobile navigation improvements.
+
+00:03:48.000 --> 00:03:52.000
+Avery Kim: Action: write migration.
+
+00:03:50.000 --> 00:03:57.000
+Priya Singh: Let’s clarify acceptance criteria on mobile navigation improvements.
+
+00:03:57.000 --> 00:04:04.000
+Jordan Patel: Action: book design review.
+
+00:04:04.000 --> 00:04:10.000
+Samira López: Action: set up dashboards.
+
+00:04:08.000 --> 00:04:14.000
+Riley Chen: Action: create test plan.
+
+00:04:13.000 --> 00:04:19.000
+Avery Kim: Infra-wise, Let’s clarify acceptance criteria.
+
+00:04:18.000 --> 00:04:22.000
+Samira López: Let’s keep this within this sprint on mobile navigation improvements.
+
+00:04:21.000 --> 00:04:25.000
+Riley Chen: Let’s not block on mobile navigation improvements; ship a thin slice.
+
+00:04:25.000 --> 00:04:32.000
+Avery Kim: Risk: accessibility gaps for mobile navigation improvements.
+
+00:04:33.000 --> 00:04:37.000
+Noah Williams: From design side, Security review is likely.
+
+00:04:37.000 --> 00:04:41.000
+Samira López: Okay, who can take ownership?
+
+00:04:40.000 --> 00:04:46.000
+Samira López: Let’s finalize target date in Jira after this.
+
+00:04:45.000 --> 00:04:59.999
+Avery Kim: We’ll review outcomes in the next standup.

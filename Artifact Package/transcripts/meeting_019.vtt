@@ -1,0 +1,145 @@
+WEBVTT
+
+00:00:00.000 --> 00:00:06.000
+Avery Kim: Today’s focus: security review prep.
+
+00:00:04.000 --> 00:00:10.000
+Jordan Patel: Any blockers from last time?
+
+00:00:09.000 --> 00:00:15.000
+Priya Singh: Let’s aim for a concrete owner and rollout plan.
+
+00:00:14.000 --> 00:00:21.000
+Jordan Patel: Let’s not block on security review prep; start with a spike.
+
+00:00:22.000 --> 00:00:26.000
+Samira López: Edge cases around auth and retries on security review prep.
+
+00:00:24.000 --> 00:00:30.000
+Riley Chen: Let’s not block on security review prep; parallelize testing.
+
+00:00:29.000 --> 00:00:33.000
+Samira López: I think we split security review prep into two subtasks.
+
+00:00:33.000 --> 00:00:38.000
+Samira López: From design side, Performance baseline needs to be recorded.
+
+00:00:38.000 --> 00:00:44.000
+Avery Kim: Let’s clarify acceptance criteria on security review prep.
+
+00:00:42.000 --> 00:00:46.000
+Noah Williams: Let’s not block on security review prep; parallelize testing.
+
+00:00:45.000 --> 00:00:51.000
+Noah Williams: Risk: data migration for security review prep.
+
+00:00:49.000 --> 00:00:53.000
+Riley Chen: Risk: flaky tests for security review prep.
+
+00:00:52.000 --> 00:00:57.000
+Avery Kim: Let’s capture action items clearly on security review prep.
+
+00:00:57.000 --> 00:01:04.000
+Samira López: Risk: scope creep for security review prep.
+
+00:01:03.000 --> 00:01:09.000
+Noah Williams: From design side, We need to align with capacity.
+
+00:01:07.000 --> 00:01:14.000
+Avery Kim: Action: create test plan.
+
+00:01:12.000 --> 00:01:15.000
+Priya Singh: Let’s not block on security review prep; parallelize testing.
+
+00:01:15.000 --> 00:01:20.000
+Noah Williams: Let’s not block on security review prep; start with a spike.
+
+00:01:18.000 --> 00:01:25.000
+Riley Chen: Let’s not block on security review prep; start with a spike.
+
+00:01:26.000 --> 00:01:31.000
+Noah Williams: Risk: accessibility gaps for security review prep.
+
+00:01:29.000 --> 00:01:35.000
+Noah Williams: From QA perspective, Design feedback is pending.
+
+00:01:33.000 --> 00:01:40.000
+Avery Kim: Risk: data migration for security review prep.
+
+00:01:39.000 --> 00:01:43.000
+Riley Chen: Risk: scope creep for security review prep.
+
+00:01:43.000 --> 00:01:47.000
+Jordan Patel: From design side, Performance baseline needs to be recorded.
+
+00:01:45.000 --> 00:01:50.000
+Samira López: Infra-wise, We can chunk work behind a ticket.
+
+00:01:49.000 --> 00:01:50.000
+Samira López: From design side, Performance baseline needs to be recorded.
+
+00:01:50.000 --> 00:01:56.000
+Samira López: Risk: flaky tests for security review prep.
+
+00:01:54.000 --> 00:01:59.000
+Priya Singh: Let’s not block on security review prep; start with a spike.
+
+00:01:59.000 --> 00:02:06.000
+Avery Kim: Action: write migration.
+
+00:02:04.000 --> 00:02:08.000
+Riley Chen: My take is we split security review prep into two subtasks.
+
+00:02:08.000 --> 00:02:14.000
+Samira López: My take is we split security review prep into two subtasks.
+
+00:02:12.000 --> 00:02:17.000
+Noah Williams: Risk: accessibility gaps for security review prep.
+
+00:02:16.000 --> 00:02:23.000
+Noah Williams: Let’s not block on security review prep; start with a spike.
+
+00:02:24.000 --> 00:02:27.000
+Priya Singh: Let’s not block on security review prep; parallelize testing.
+
+00:02:26.000 --> 00:02:33.000
+Avery Kim: I think we split security review prep into two subtasks.
+
+00:02:33.000 --> 00:02:40.000
+Riley Chen: Risk: scope creep for security review prep.
+
+00:02:39.000 --> 00:02:43.000
+Samira López: Risk: accessibility gaps for security review prep.
+
+00:02:43.000 --> 00:02:49.000
+Jordan Patel: From design side, We can chunk work behind a ticket.
+
+00:02:48.000 --> 00:02:53.000
+Jordan Patel: Let’s not block on security review prep; ship a thin slice.
+
+00:02:53.000 --> 00:02:59.000
+Riley Chen: I think we split security review prep into two subtasks.
+
+00:02:59.000 --> 00:03:06.000
+Samira López: Risk: data migration for security review prep.
+
+00:03:06.000 --> 00:03:11.000
+Jordan Patel: Infra-wise, Security review is likely.
+
+00:03:09.000 --> 00:03:15.000
+Jordan Patel: Risk: accessibility gaps for security review prep.
+
+00:03:15.000 --> 00:03:20.000
+Samira López: My take is we split security review prep into two subtasks.
+
+00:03:20.000 --> 00:03:26.000
+Riley Chen: Let’s not block on security review prep; parallelize testing.
+
+00:03:24.000 --> 00:03:30.000
+Samira López: Okay, who can take ownership?
+
+00:03:29.000 --> 00:03:35.000
+Priya Singh: Let’s finalize target date in Jira after this.
+
+00:03:34.000 --> 00:04:59.999
+Avery Kim: We’ll review outcomes in the next standup.

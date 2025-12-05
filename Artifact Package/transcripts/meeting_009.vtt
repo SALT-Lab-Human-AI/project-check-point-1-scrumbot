@@ -1,0 +1,151 @@
+WEBVTT
+
+00:00:00.000 --> 00:00:05.000
+Samira López: Today’s focus: performance baseline for homepage.
+
+00:00:03.000 --> 00:00:09.000
+Riley Chen: Any blockers from last time?
+
+00:00:08.000 --> 00:00:13.000
+Avery Kim: Let’s aim for a concrete owner and rollout plan.
+
+00:00:12.000 --> 00:00:16.000
+Jordan Patel: I think we split performance baseline for homepage into two subtasks.
+
+00:00:16.000 --> 00:00:18.000
+Avery Kim: Risk: flaky tests for performance baseline for homepage.
+
+00:00:18.000 --> 00:00:25.000
+Samira López: Action: set up dashboards.
+
+00:00:24.000 --> 00:00:30.000
+Riley Chen: I propose we split performance baseline for homepage into two subtasks.
+
+00:00:29.000 --> 00:00:34.000
+Samira López: Let’s not block on performance baseline for homepage; ship a thin slice.
+
+00:00:34.000 --> 00:00:40.000
+Avery Kim: Action: set up dashboards.
+
+00:00:38.000 --> 00:00:43.000
+Riley Chen: Action: set up dashboards.
+
+00:00:42.000 --> 00:00:47.000
+Jordan Patel: From design side, We might need a migration.
+
+00:00:46.000 --> 00:00:50.000
+Riley Chen: Action: book design review.
+
+00:00:49.000 --> 00:00:54.000
+Jordan Patel: Action: write migration.
+
+00:00:54.000 --> 00:01:00.000
+Priya Singh: Quick update on the scope on performance baseline for homepage.
+
+00:00:58.000 --> 00:01:03.000
+Noah Williams: Any risks we’re missing? on performance baseline for homepage.
+
+00:01:02.000 --> 00:01:09.000
+Noah Williams: My take is we split performance baseline for homepage into two subtasks.
+
+00:01:09.000 --> 00:01:14.000
+Samira López: Risk: accessibility gaps for performance baseline for homepage.
+
+00:01:12.000 --> 00:01:17.000
+Avery Kim: Let’s not block on performance baseline for homepage; start with a spike.
+
+00:01:17.000 --> 00:01:22.000
+Noah Williams: Quick update on the scope on performance baseline for homepage.
+
+00:01:22.000 --> 00:01:26.000
+Avery Kim: Action: book design review.
+
+00:01:25.000 --> 00:01:28.000
+Riley Chen: I propose we split performance baseline for homepage into two subtasks.
+
+00:01:28.000 --> 00:01:31.000
+Riley Chen: Action: book design review.
+
+00:01:29.000 --> 00:01:34.000
+Jordan Patel: My take is we split performance baseline for homepage into two subtasks.
+
+00:01:34.000 --> 00:01:40.000
+Samira López: I think we split performance baseline for homepage into two subtasks.
+
+00:01:39.000 --> 00:01:45.000
+Noah Williams: Action: book design review.
+
+00:01:45.000 --> 00:01:51.000
+Jordan Patel: Risk: scope creep for performance baseline for homepage.
+
+00:01:50.000 --> 00:01:57.000
+Samira López: Let’s not block on performance baseline for homepage; ship a thin slice.
+
+00:01:55.000 --> 00:02:00.000
+Jordan Patel: Risk: data migration for performance baseline for homepage.
+
+00:01:58.000 --> 00:02:02.000
+Jordan Patel: Let’s not block on performance baseline for homepage; start with a spike.
+
+00:02:02.000 --> 00:02:08.000
+Samira López: Risk: data migration for performance baseline for homepage.
+
+00:02:06.000 --> 00:02:09.000
+Noah Williams: From QA perspective, Performance baseline needs to be recorded.
+
+00:02:09.000 --> 00:02:13.000
+Priya Singh: My take is we split performance baseline for homepage into two subtasks.
+
+00:02:13.000 --> 00:02:18.000
+Riley Chen: We should add a feature flag on performance baseline for homepage.
+
+00:02:16.000 --> 00:02:22.000
+Riley Chen: Let’s not block on performance baseline for homepage; parallelize testing.
+
+00:02:22.000 --> 00:02:24.000
+Jordan Patel: I propose we split performance baseline for homepage into two subtasks.
+
+00:02:24.000 --> 00:02:28.000
+Avery Kim: I think we split performance baseline for homepage into two subtasks.
+
+00:02:28.000 --> 00:02:33.000
+Riley Chen: Risk: data migration for performance baseline for homepage.
+
+00:02:32.000 --> 00:02:37.000
+Priya Singh: Action: book design review.
+
+00:02:37.000 --> 00:02:42.000
+Priya Singh: UX needs a final pass on performance baseline for homepage.
+
+00:02:41.000 --> 00:02:48.000
+Noah Williams: From QA perspective, Security review is likely.
+
+00:02:46.000 --> 00:02:51.000
+Priya Singh: Let’s not block on performance baseline for homepage; start with a spike.
+
+00:02:51.000 --> 00:02:57.000
+Riley Chen: I propose we split performance baseline for homepage into two subtasks.
+
+00:02:57.000 --> 00:03:01.000
+Jordan Patel: Action: create test plan.
+
+00:03:00.000 --> 00:03:05.000
+Samira López: Action: set up dashboards.
+
+00:03:05.000 --> 00:03:10.000
+Jordan Patel: Action: create test plan.
+
+00:03:09.000 --> 00:03:14.000
+Jordan Patel: I think we split performance baseline for homepage into two subtasks.
+
+00:03:13.000 --> 00:03:19.000
+Priya Singh: From design side, Specifically for performance baseline for homepage.
+
+00:03:17.000 --> 00:03:24.000
+Riley Chen: Okay, who can take ownership?
+
+00:03:23.000 --> 00:03:28.000
+Jordan Patel: Let’s finalize target date in Jira after this.
+
+00:03:27.000 --> 00:04:59.999
+Jordan Patel: We’ll review outcomes in the next standup.

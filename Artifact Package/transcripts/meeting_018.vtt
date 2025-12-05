@@ -1,0 +1,133 @@
+WEBVTT
+
+00:00:00.000 --> 00:00:07.000
+Jordan Patel: Today’s focus: schema evolution for orders.
+
+00:00:05.000 --> 00:00:11.000
+Noah Williams: Any blockers from last time?
+
+00:00:09.000 --> 00:00:15.000
+Riley Chen: Let’s aim for a concrete owner and rollout plan.
+
+00:00:13.000 --> 00:00:17.000
+Noah Williams: From QA perspective, Tests should cover unhappy paths.
+
+00:00:16.000 --> 00:00:22.000
+Avery Kim: Let’s not block on schema evolution for orders; ship a thin slice.
+
+00:00:20.000 --> 00:00:24.000
+Samira López: Risk: flaky tests for schema evolution for orders.
+
+00:00:24.000 --> 00:00:31.000
+Noah Williams: Action: create test plan.
+
+00:00:31.000 --> 00:00:35.000
+Riley Chen: Risk: data migration for schema evolution for orders.
+
+00:00:35.000 --> 00:00:42.000
+Noah Williams: Let’s clarify acceptance criteria on schema evolution for orders.
+
+00:00:41.000 --> 00:00:48.000
+Samira López: From design side, Security review is likely.
+
+00:00:46.000 --> 00:00:50.000
+Priya Singh: From QA perspective, Performance baseline needs to be recorded.
+
+00:00:49.000 --> 00:00:55.000
+Riley Chen: Risk: data migration for schema evolution for orders.
+
+00:00:54.000 --> 00:01:00.000
+Samira López: Risk: data migration for schema evolution for orders.
+
+00:01:00.000 --> 00:01:07.000
+Samira López: I think we split schema evolution for orders into two subtasks.
+
+00:01:08.000 --> 00:01:13.000
+Samira López: Let’s clarify acceptance criteria on schema evolution for orders.
+
+00:01:11.000 --> 00:01:17.000
+Riley Chen: Action: book design review.
+
+00:01:16.000 --> 00:01:22.000
+Priya Singh: Action: write migration.
+
+00:01:21.000 --> 00:01:26.000
+Riley Chen: Let’s not block on schema evolution for orders; start with a spike.
+
+00:01:25.000 --> 00:01:29.000
+Riley Chen: Let’s not block on schema evolution for orders; parallelize testing.
+
+00:01:29.000 --> 00:01:33.000
+Noah Williams: Let’s not block on schema evolution for orders; parallelize testing.
+
+00:01:31.000 --> 00:01:34.000
+Jordan Patel: From QA perspective, We will stage it behind a feature flag.
+
+00:01:32.000 --> 00:01:35.000
+Riley Chen: My take is we split schema evolution for orders into two subtasks.
+
+00:01:35.000 --> 00:01:40.000
+Avery Kim: Let’s not block on schema evolution for orders; start with a spike.
+
+00:01:38.000 --> 00:01:44.000
+Riley Chen: I think we split schema evolution for orders into two subtasks.
+
+00:01:44.000 --> 00:01:49.000
+Avery Kim: From design side, We will stage it behind a feature flag.
+
+00:01:48.000 --> 00:01:51.000
+Samira López: Let’s not block on schema evolution for orders; start with a spike.
+
+00:01:51.000 --> 00:01:58.000
+Avery Kim: Any risks we’re missing? on schema evolution for orders.
+
+00:01:59.000 --> 00:02:02.000
+Avery Kim: Let’s not block on schema evolution for orders; parallelize testing.
+
+00:02:02.000 --> 00:02:08.000
+Avery Kim: My take is we split schema evolution for orders into two subtasks.
+
+00:02:06.000 --> 00:02:11.000
+Samira López: From design side, We can chunk work behind a ticket.
+
+00:02:11.000 --> 00:02:12.000
+Riley Chen: Let’s not block on schema evolution for orders; ship a thin slice.
+
+00:02:12.000 --> 00:02:18.000
+Avery Kim: My take is we split schema evolution for orders into two subtasks.
+
+00:02:16.000 --> 00:02:20.000
+Priya Singh: Observability dashboards for errors on schema evolution for orders.
+
+00:02:20.000 --> 00:02:24.000
+Samira López: Let’s capture action items clearly on schema evolution for orders.
+
+00:02:24.000 --> 00:02:28.000
+Jordan Patel: From QA perspective, Security review is likely.
+
+00:02:28.000 --> 00:02:30.000
+Riley Chen: From design side, Design feedback is pending.
+
+00:02:30.000 --> 00:02:35.000
+Avery Kim: Risk: data migration for schema evolution for orders.
+
+00:02:34.000 --> 00:02:39.000
+Avery Kim: Quick update on the scope on schema evolution for orders.
+
+00:02:39.000 --> 00:02:45.000
+Priya Singh: Action: book design review.
+
+00:02:43.000 --> 00:02:47.000
+Jordan Patel: Coordinate with SRE for rollout on schema evolution for orders.
+
+00:02:47.000 --> 00:02:54.000
+Riley Chen: Action: book design review.
+
+00:02:52.000 --> 00:02:57.000
+Avery Kim: Okay, who can take ownership?
+
+00:02:56.000 --> 00:03:01.000
+Avery Kim: Let’s finalize target date in Jira after this.
+
+00:03:00.000 --> 00:04:59.999
+Noah Williams: We’ll review outcomes in the next standup.

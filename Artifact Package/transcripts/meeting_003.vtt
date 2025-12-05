@@ -1,0 +1,145 @@
+WEBVTT
+
+00:00:00.000 --> 00:00:06.000
+Avery Kim: Today’s focus: search relevance tuning.
+
+00:00:05.000 --> 00:00:14.000
+Avery Kim: Any blockers from last time?
+
+00:00:12.000 --> 00:00:19.000
+Avery Kim: Let’s aim for a concrete owner and rollout plan.
+
+00:00:17.000 --> 00:00:19.000
+Jordan Patel: We’ll need QA test cases listed on search relevance tuning.
+
+00:00:19.000 --> 00:00:25.000
+Avery Kim: From QA perspective, Security review is likely.
+
+00:00:23.000 --> 00:00:27.000
+Noah Williams: UX needs a final pass on search relevance tuning.
+
+00:00:27.000 --> 00:00:32.000
+Jordan Patel: Let’s not block on search relevance tuning; ship a thin slice.
+
+00:00:30.000 --> 00:00:32.000
+Noah Williams: I propose we split search relevance tuning into two subtasks.
+
+00:00:32.000 --> 00:00:38.000
+Riley Chen: Let’s not block on search relevance tuning; ship a thin slice.
+
+00:00:37.000 --> 00:00:44.000
+Noah Williams: Let’s not block on search relevance tuning; parallelize testing.
+
+00:00:43.000 --> 00:00:50.000
+Riley Chen: I propose we split search relevance tuning into two subtasks.
+
+00:00:48.000 --> 00:00:54.000
+Noah Williams: Action: create test plan.
+
+00:00:52.000 --> 00:00:56.000
+Avery Kim: Let’s not block on search relevance tuning; ship a thin slice.
+
+00:00:56.000 --> 00:01:00.000
+Riley Chen: Infra-wise, We will stage it behind a feature flag.
+
+00:01:00.000 --> 00:01:02.000
+Samira López: Action: create test plan.
+
+00:01:02.000 --> 00:01:05.000
+Samira López: I propose we split search relevance tuning into two subtasks.
+
+00:01:05.000 --> 00:01:11.000
+Avery Kim: I think we split search relevance tuning into two subtasks.
+
+00:01:11.000 --> 00:01:17.000
+Riley Chen: My take is we split search relevance tuning into two subtasks.
+
+00:01:16.000 --> 00:01:23.000
+Samira López: Coordinate with SRE for rollout on search relevance tuning.
+
+00:01:23.000 --> 00:01:28.000
+Jordan Patel: I propose we split search relevance tuning into two subtasks.
+
+00:01:28.000 --> 00:01:32.000
+Jordan Patel: Risk: flaky tests for search relevance tuning.
+
+00:01:32.000 --> 00:01:38.000
+Riley Chen: My take is we split search relevance tuning into two subtasks.
+
+00:01:37.000 --> 00:01:44.000
+Samira López: I think we split search relevance tuning into two subtasks.
+
+00:01:42.000 --> 00:01:48.000
+Noah Williams: Action: create test plan.
+
+00:01:46.000 --> 00:01:52.000
+Noah Williams: Any risks we’re missing? on search relevance tuning.
+
+00:01:50.000 --> 00:01:57.000
+Avery Kim: Let’s not block on search relevance tuning; parallelize testing.
+
+00:01:56.000 --> 00:02:01.000
+Samira López: I think we split search relevance tuning into two subtasks.
+
+00:02:01.000 --> 00:02:05.000
+Samira López: Action: book design review.
+
+00:02:05.000 --> 00:02:10.000
+Jordan Patel: From design side, Security review is likely.
+
+00:02:08.000 --> 00:02:15.000
+Avery Kim: Action: set up dashboards.
+
+00:02:14.000 --> 00:02:19.000
+Priya Singh: Action: book design review.
+
+00:02:17.000 --> 00:02:24.000
+Riley Chen: Let’s not block on search relevance tuning; start with a spike.
+
+00:02:23.000 --> 00:02:28.000
+Samira López: Risk: data migration for search relevance tuning.
+
+00:02:27.000 --> 00:02:33.000
+Noah Williams: From QA perspective, Specifically for search relevance tuning.
+
+00:02:33.000 --> 00:02:38.000
+Noah Williams: Infra-wise, Tests should cover unhappy paths.
+
+00:02:37.000 --> 00:02:39.000
+Priya Singh: Action: create test plan.
+
+00:02:39.000 --> 00:02:43.000
+Noah Williams: Let’s not block on search relevance tuning; start with a spike.
+
+00:02:41.000 --> 00:02:48.000
+Jordan Patel: Let’s clarify acceptance criteria on search relevance tuning.
+
+00:02:48.000 --> 00:02:54.000
+Priya Singh: My take is we split search relevance tuning into two subtasks.
+
+00:02:52.000 --> 00:02:57.000
+Priya Singh: Let’s not block on search relevance tuning; ship a thin slice.
+
+00:02:56.000 --> 00:03:03.000
+Jordan Patel: Action: create test plan.
+
+00:03:02.000 --> 00:03:06.000
+Avery Kim: Action: set up dashboards.
+
+00:03:05.000 --> 00:03:07.000
+Samira López: I think we split search relevance tuning into two subtasks.
+
+00:03:07.000 --> 00:03:11.000
+Jordan Patel: Quick update on the scope on search relevance tuning.
+
+00:03:11.000 --> 00:03:15.000
+Samira López: Let’s not block on search relevance tuning; ship a thin slice.
+
+00:03:15.000 --> 00:03:21.000
+Priya Singh: Okay, who can take ownership?
+
+00:03:20.000 --> 00:03:26.000
+Avery Kim: Let’s finalize target date in Jira after this.
+
+00:03:25.000 --> 00:04:59.999
+Samira López: We’ll review outcomes in the next standup.

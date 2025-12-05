@@ -1,0 +1,151 @@
+WEBVTT
+
+00:00:00.000 --> 00:00:09.000
+Avery Kim: Today’s focus: caching strategy for product page.
+
+00:00:07.000 --> 00:00:14.000
+Noah Williams: Any blockers from last time?
+
+00:00:12.000 --> 00:00:17.000
+Priya Singh: Let’s aim for a concrete owner and rollout plan.
+
+00:00:16.000 --> 00:00:23.000
+Priya Singh: I think we split caching strategy for product page into two subtasks.
+
+00:00:22.000 --> 00:00:27.000
+Avery Kim: Risk: accessibility gaps for caching strategy for product page.
+
+00:00:25.000 --> 00:00:30.000
+Priya Singh: My take is we split caching strategy for product page into two subtasks.
+
+00:00:29.000 --> 00:00:34.000
+Riley Chen: Action: write migration.
+
+00:00:33.000 --> 00:00:39.000
+Avery Kim: Risk: flaky tests for caching strategy for product page.
+
+00:00:38.000 --> 00:00:43.000
+Riley Chen: Action: set up dashboards.
+
+00:00:42.000 --> 00:00:49.000
+Priya Singh: Infra-wise, We might need a migration.
+
+00:00:49.000 --> 00:00:55.000
+Samira López: Action: book design review.
+
+00:00:54.000 --> 00:00:57.000
+Jordan Patel: We’ll need QA test cases listed on caching strategy for product page.
+
+00:00:57.000 --> 00:01:04.000
+Priya Singh: UX needs a final pass on caching strategy for product page.
+
+00:01:02.000 --> 00:01:06.000
+Priya Singh: Let’s keep this within this sprint on caching strategy for product page.
+
+00:01:05.000 --> 00:01:08.000
+Priya Singh: Risk: scope creep for caching strategy for product page.
+
+00:01:08.000 --> 00:01:13.000
+Priya Singh: Risk: data migration for caching strategy for product page.
+
+00:01:12.000 --> 00:01:17.000
+Jordan Patel: Coordinate with SRE for rollout on caching strategy for product page.
+
+00:01:15.000 --> 00:01:22.000
+Priya Singh: Let’s not block on caching strategy for product page; parallelize testing.
+
+00:01:20.000 --> 00:01:26.000
+Priya Singh: I think we split caching strategy for product page into two subtasks.
+
+00:01:26.000 --> 00:01:30.000
+Riley Chen: Action: create test plan.
+
+00:01:30.000 --> 00:01:36.000
+Priya Singh: From QA perspective, Any risks we’re missing?.
+
+00:01:35.000 --> 00:01:38.000
+Priya Singh: Infra-wise, Specifically for caching strategy for product page.
+
+00:01:38.000 --> 00:01:44.000
+Priya Singh: I propose we split caching strategy for product page into two subtasks.
+
+00:01:42.000 --> 00:01:47.000
+Samira López: From design side, We will stage it behind a feature flag.
+
+00:01:46.000 --> 00:01:51.000
+Priya Singh: Action: book design review.
+
+00:01:50.000 --> 00:01:56.000
+Jordan Patel: Risk: scope creep for caching strategy for product page.
+
+00:01:55.000 --> 00:02:01.000
+Samira López: Infra-wise, Specifically for caching strategy for product page.
+
+00:02:01.000 --> 00:02:08.000
+Riley Chen: I propose we split caching strategy for product page into two subtasks.
+
+00:02:08.000 --> 00:02:15.000
+Avery Kim: Action: create test plan.
+
+00:02:16.000 --> 00:02:22.000
+Priya Singh: Action: create test plan.
+
+00:02:20.000 --> 00:02:24.000
+Priya Singh: Risk: flaky tests for caching strategy for product page.
+
+00:02:22.000 --> 00:02:29.000
+Jordan Patel: I think we split caching strategy for product page into two subtasks.
+
+00:02:27.000 --> 00:02:32.000
+Priya Singh: From design side, We can chunk work behind a ticket.
+
+00:02:32.000 --> 00:02:38.000
+Priya Singh: I propose we split caching strategy for product page into two subtasks.
+
+00:02:37.000 --> 00:02:43.000
+Noah Williams: Quick update on the scope on caching strategy for product page.
+
+00:02:42.000 --> 00:02:48.000
+Jordan Patel: Infra-wise, Tests should cover unhappy paths.
+
+00:02:47.000 --> 00:02:51.000
+Jordan Patel: I propose we split caching strategy for product page into two subtasks.
+
+00:02:51.000 --> 00:02:58.000
+Samira López: From design side, Tests should cover unhappy paths.
+
+00:02:58.000 --> 00:03:05.000
+Riley Chen: Let’s not block on caching strategy for product page; ship a thin slice.
+
+00:03:03.000 --> 00:03:09.000
+Avery Kim: I propose we split caching strategy for product page into two subtasks.
+
+00:03:09.000 --> 00:03:16.000
+Riley Chen: Let’s not block on caching strategy for product page; parallelize testing.
+
+00:03:14.000 --> 00:03:19.000
+Jordan Patel: Risk: data migration for caching strategy for product page.
+
+00:03:19.000 --> 00:03:26.000
+Priya Singh: We need to timebox the spike on caching strategy for product page.
+
+00:03:24.000 --> 00:03:30.000
+Jordan Patel: Infra-wise, Tests should cover unhappy paths.
+
+00:03:29.000 --> 00:03:36.000
+Noah Williams: Risk: accessibility gaps for caching strategy for product page.
+
+00:03:34.000 --> 00:03:41.000
+Priya Singh: Risk: scope creep for caching strategy for product page.
+
+00:03:42.000 --> 00:03:49.000
+Priya Singh: Let’s not block on caching strategy for product page; parallelize testing.
+
+00:03:50.000 --> 00:03:55.000
+Avery Kim: Okay, who can take ownership?
+
+00:03:54.000 --> 00:03:58.000
+Noah Williams: Let’s finalize target date in Jira after this.
+
+00:03:57.000 --> 00:04:59.999
+Avery Kim: We’ll review outcomes in the next standup.

@@ -1,0 +1,166 @@
+WEBVTT
+
+00:00:00.000 --> 00:00:05.000
+Priya Singh: Today’s focus: migration to PostgreSQL 15.
+
+00:00:04.000 --> 00:00:09.000
+Noah Williams: Any blockers from last time?
+
+00:00:08.000 --> 00:00:15.000
+Samira López: Let’s aim for a concrete owner and rollout plan.
+
+00:00:13.000 --> 00:00:18.000
+Samira López: Let’s not block on migration to PostgreSQL 15; ship a thin slice.
+
+00:00:18.000 --> 00:00:22.000
+Noah Williams: I propose we split migration to PostgreSQL 15 into two subtasks.
+
+00:00:20.000 --> 00:00:23.000
+Priya Singh: Quick update on the scope on migration to PostgreSQL 15.
+
+00:00:23.000 --> 00:00:29.000
+Priya Singh: Coordinate with SRE for rollout on migration to PostgreSQL 15.
+
+00:00:29.000 --> 00:00:35.000
+Priya Singh: From QA perspective, We need to timebox the spike.
+
+00:00:33.000 --> 00:00:40.000
+Avery Kim: Edge cases around auth and retries on migration to PostgreSQL 15.
+
+00:00:39.000 --> 00:00:44.000
+Priya Singh: Action: book design review.
+
+00:00:42.000 --> 00:00:45.000
+Riley Chen: From design side, We might need a migration.
+
+00:00:45.000 --> 00:00:50.000
+Riley Chen: We should add a feature flag on migration to PostgreSQL 15.
+
+00:00:50.000 --> 00:00:56.000
+Avery Kim: Let’s not block on migration to PostgreSQL 15; ship a thin slice.
+
+00:00:55.000 --> 00:01:00.000
+Jordan Patel: Risk: data migration for migration to PostgreSQL 15.
+
+00:00:58.000 --> 00:01:05.000
+Noah Williams: Risk: data migration for migration to PostgreSQL 15.
+
+00:01:04.000 --> 00:01:08.000
+Samira López: Action: set up dashboards.
+
+00:01:08.000 --> 00:01:13.000
+Jordan Patel: Action: set up dashboards.
+
+00:01:11.000 --> 00:01:14.000
+Priya Singh: From design side, We can chunk work behind a ticket.
+
+00:01:14.000 --> 00:01:19.000
+Riley Chen: Action: create test plan.
+
+00:01:19.000 --> 00:01:22.000
+Avery Kim: From QA perspective, Coordinate with SRE for rollout.
+
+00:01:22.000 --> 00:01:29.000
+Riley Chen: Let’s not block on migration to PostgreSQL 15; ship a thin slice.
+
+00:01:27.000 --> 00:01:32.000
+Riley Chen: Risk: scope creep for migration to PostgreSQL 15.
+
+00:01:30.000 --> 00:01:37.000
+Jordan Patel: I think we split migration to PostgreSQL 15 into two subtasks.
+
+00:01:37.000 --> 00:01:42.000
+Noah Williams: Any risks we’re missing? on migration to PostgreSQL 15.
+
+00:01:42.000 --> 00:01:48.000
+Jordan Patel: Action: write migration.
+
+00:01:47.000 --> 00:01:54.000
+Riley Chen: Action: create test plan.
+
+00:01:52.000 --> 00:01:57.000
+Jordan Patel: Any risks we’re missing? on migration to PostgreSQL 15.
+
+00:01:57.000 --> 00:02:01.000
+Samira López: I think we split migration to PostgreSQL 15 into two subtasks.
+
+00:02:00.000 --> 00:02:05.000
+Noah Williams: My take is we split migration to PostgreSQL 15 into two subtasks.
+
+00:02:03.000 --> 00:02:08.000
+Jordan Patel: Let’s not block on migration to PostgreSQL 15; start with a spike.
+
+00:02:08.000 --> 00:02:15.000
+Noah Williams: Infra-wise, We can chunk work behind a ticket.
+
+00:02:13.000 --> 00:02:19.000
+Jordan Patel: Risk: scope creep for migration to PostgreSQL 15.
+
+00:02:18.000 --> 00:02:22.000
+Jordan Patel: Edge cases around auth and retries on migration to PostgreSQL 15.
+
+00:02:22.000 --> 00:02:28.000
+Avery Kim: Risk: flaky tests for migration to PostgreSQL 15.
+
+00:02:28.000 --> 00:02:34.000
+Samira López: Risk: accessibility gaps for migration to PostgreSQL 15.
+
+00:02:32.000 --> 00:02:36.000
+Samira López: Let’s keep this within this sprint on migration to PostgreSQL 15.
+
+00:02:35.000 --> 00:02:40.000
+Priya Singh: Risk: accessibility gaps for migration to PostgreSQL 15.
+
+00:02:38.000 --> 00:02:40.000
+Riley Chen: Let’s capture action items clearly on migration to PostgreSQL 15.
+
+00:02:40.000 --> 00:02:46.000
+Riley Chen: Risk: flaky tests for migration to PostgreSQL 15.
+
+00:02:44.000 --> 00:02:51.000
+Riley Chen: From design side, We need to align with capacity.
+
+00:02:51.000 --> 00:02:58.000
+Avery Kim: Let’s not block on migration to PostgreSQL 15; ship a thin slice.
+
+00:02:57.000 --> 00:03:04.000
+Noah Williams: Quick update on the scope on migration to PostgreSQL 15.
+
+00:03:02.000 --> 00:03:09.000
+Avery Kim: I propose we split migration to PostgreSQL 15 into two subtasks.
+
+00:03:07.000 --> 00:03:14.000
+Priya Singh: From design side, Performance baseline needs to be recorded.
+
+00:03:13.000 --> 00:03:17.000
+Samira López: Let’s not block on migration to PostgreSQL 15; start with a spike.
+
+00:03:16.000 --> 00:03:22.000
+Riley Chen: Action: set up dashboards.
+
+00:03:20.000 --> 00:03:25.000
+Avery Kim: My take is we split migration to PostgreSQL 15 into two subtasks.
+
+00:03:23.000 --> 00:03:26.000
+Samira López: Action: write migration.
+
+00:03:26.000 --> 00:03:31.000
+Priya Singh: UX needs a final pass on migration to PostgreSQL 15.
+
+00:03:31.000 --> 00:03:33.000
+Avery Kim: Risk: flaky tests for migration to PostgreSQL 15.
+
+00:03:32.000 --> 00:03:37.000
+Noah Williams: Let’s capture action items clearly on migration to PostgreSQL 15.
+
+00:03:37.000 --> 00:03:43.000
+Riley Chen: Observability dashboards for errors on migration to PostgreSQL 15.
+
+00:03:42.000 --> 00:03:47.000
+Avery Kim: Okay, who can take ownership?
+
+00:03:46.000 --> 00:03:52.000
+Priya Singh: Let’s finalize target date in Jira after this.
+
+00:03:51.000 --> 00:04:59.999
+Samira López: We’ll review outcomes in the next standup.
