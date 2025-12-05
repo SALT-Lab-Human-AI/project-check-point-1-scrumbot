@@ -1,0 +1,7 @@
+member_id,name,role,time_zone,seniority
+M1,Avery Kim,Product Owner,America/Chicago,Senior
+M2,Riley Chen,Dev Lead,America/Los_Angeles,Senior
+M3,Jordan Patel,QA Engineer,America/New_York,Mid
+M4,Samira López,Designer,Europe/London,Mid
+M5,Noah Williams,SRE,America/Chicago,Senior
+M6,Priya Singh,Backend Engineer,Asia/Kolkata,Junior
