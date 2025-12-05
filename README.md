@@ -44,7 +44,7 @@ ScrumBot automates the mechanical parts while preserving human judgment:
 
 ```bash
 # 1. Clone and install
-git clone [https://github.com/omvyas2/scrumbot.git](https://github.com/SALT-Lab-Human-AI/project-check-point-1-scrumbot.git)
+git clone https://github.com/SALT-Lab-Human-AI/project-check-point-1-scrumbot.git
 cd scrumbot
 npm install
 
