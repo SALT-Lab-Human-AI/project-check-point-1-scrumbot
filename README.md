@@ -11,8 +11,9 @@
 📊 **User Study Results**: SUS Score 83.5/100 (Excellent) | 92% Task Success | 40% Time Savings | 92% Adoption Intent
 
 ---
-Link : https://v0-remix-of-duplicate-of-remix-of-u-seven.vercel.app/
-Presentation : https://uillinoisedu-my.sharepoint.com/:p:/g/personal/omvyas2_illinois_edu/EZ24s2Gqm5lLpR8LCcL4RdEB21qXwv0XS7-12cAwkUxHZQ?e=sKsHMu
+**Link** : https://v0-remix-of-duplicate-of-remix-of-u-seven.vercel.app/
+
+**Presentation** : https://uillinoisedu-my.sharepoint.com/:p:/g/personal/omvyas2_illinois_edu/EZ24s2Gqm5lLpR8LCcL4RdEB21qXwv0XS7-12cAwkUxHZQ?e=sKsHMu
 ## 🎯 Overview
 
 ScrumBot transforms sprint planning from a manual, time-consuming process into an efficient, AI-assisted workflow. It combines the power of large language models with a transparent, human-centered design that keeps teams in control.
