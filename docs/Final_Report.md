@@ -617,49 +617,422 @@ One participant wrote:
     "This form"
     ...as their frustration, referring to the survey—not the tool.
 
-# 6. Discussion
+6.  **Discussion**
+    
 
-The results strongly validate ScrumBot’s value as a mixed-initiative AI planning assistant.
+The results strongly validate ScrumBot’s value as a mixed-initiative AI planning assistant. However, a deeper analysis of the three critical bugs encountered during user testing reveals important implications for design, deployment, and the broader landscape of GenAI systems in production environments.
 
-## 6.1 Key Findings
+**6.1 Key Findings**
 
-### Finding 1 — ScrumBot dramatically improves efficiency
+**Finding 1 — ScrumBot dramatically improves efficiency**Participants completed tasks 40% faster than expected, validating that AI automation can meaningfully accelerate sprint planning without sacrificing quality.
 
-Participants completed tasks **40% faster** than expected.
+**Finding 2 — Excellent usability**SUS = 83.5 places ScrumBot in the top 10% of all evaluated systems, demonstrating that complex AI systems can achieve excellent usability through transparent design and human control.
 
-### Finding 2 — Excellent usability
+**Finding 3 — High trust through transparency**\- Justifications: 4.75/5 - Trust: 4.67/5 - Users rely on AI more when they understand _why_ it makes a recommendation.
 
+**Finding 4 — Automated extraction works extremely well**LLM-based story extraction scored 4.42–4.67/5, validating prompt engineering and parsing approaches for structured artifact generation.
 
-**Course:** IS492 —Intro Gen AI for Human-AI Coll
-**Semester:** Fall 2025
-SUS = 83.5 places ScrumBot in the **top 10% of all evaluated systems**.
+**Finding 5 — Mixed-initiative design succeeded**Participants freely edited stories, adjusted weights, and applied human judgment, confirming that automation + control = adoption (92% willingness).
 
-### Finding 3 — High trust through transparency
+**6.2 Critical Bug Analysis & Implications**
 
-```
-● Justifications: 4.75/
-● Trust: 4.67/
-● Users rely on AI more when they understand why it makes a recommendation.
-```
-### Finding 4 — Automated extraction works extremely well
+While overall metrics were exceptional, three specific bugs revealed critical considerations for deploying GenAI systems in production. We analyze each bug’s root cause, impact, and implications for both research and practice.
 
-LLM-based story extraction scored **4.42–4.67/5** , validating prompt engineering and parsing.
+_**Bug 1: CSV Export Failure (17% failure rate, HIGH severity)**_
 
-### Finding 5 — Mixed-initiative design succeeded
+**Symptom:**Two participants (17%) were unable to download the CSV export file. The system appeared to generate the file, but no download occurred, with no error message displayed to users.
 
-Participants freely edited stories, adjusted weights, and applied human judgment.
+**Root Cause:****Browser compatibility issue** — Brave browser blocks client-side file downloads by default due to aggressive privacy and security settings. Our investigation of community forums (Brave Community, 2022-2025) reveals this is a widespread, known issue affecting CSV, PDF, and other file types generated via JavaScript Blob objects and document.createElement('a') download triggers.
 
-## 6.2 Interpretation
+**Evidence from Field:**\- Brave Community reports 50+ threads on “CSV download blocked” since 2021 (community.brave.app) - GitHub Issue #45730: “Brave blocked this file because this type of file is dangerous” — affects frontend-generated files - iOS Brave specifically noted: “unable to download frontend generated .csv files… no feedback about what happens” (Brave Community, Nov 2022)
 
-### Transparency = Trust
+**Why This Matters:**CSV export is the **final deliverable** of ScrumBot’s workflow — teams need this file to import into Jira, Linear, or GitHub Projects. A 17% failure rate on the critical path is unacceptable for production deployment. More concerning, the **silent failure** (no error message) leaves users confused about whether the issue is their fault, the browser’s, or the system’s.
 
-The consistent praise for scoring breakdowns supports decades of HCI research emphasizing the
-importance of explainability in AI-assisted decision-making.
+**Design Implications:**
 
-### Automation + Control = Adoption
+1.  **Browser Detection & Graceful Degradation**
+    
 
-92% adoption willingness shows users want automated planning tools—so long as they remain
-editable and transparent.
+*   Detect Brave browser via user agent: navigator.brave?.isBrave()
+    
+*   Display pre-emptive warning: “Brave users: Please allow downloads in browser settings”
+    
+*   Provide alternative export methods:
+    
+    *   Copy-to-clipboard fallback (always works)
+        
+    *   Server-side download endpoint (bypasses client-side blocks)
+        
+    *   Email export option
+        
+
+1.  **Error Visibility**
+    
+
+*   Implement download failure detection (timeout after 2 seconds)
+    
+*   Show explicit error: “Download blocked by browser. \[Troubleshooting Guide\]”
+    
+*   Add visual feedback: loading spinner → success checkmark OR error message
+    
+
+1.  **User Education**
+    
+
+*   Add help tooltip next to export button: “Having trouble? Click here”
+    
+*   Link to browser-specific troubleshooting guides
+    
+*   Include screenshot instructions for enabling downloads in Brave
+    
+
+**Deployment Implications:**
+
+1.  **Cross-Browser Testing in CI/CD**
+    
+
+*   Test on Chrome, Firefox, Safari, Edge, **and** Brave
+    
+*   Automate download testing with Playwright/Cypress
+    
+*   Monitor browser usage analytics to prioritize compatibility fixes
+    
+
+1.  **Infrastructure Changes**
+    
+
+*   Move CSV generation to server-side endpoint: POST /api/export
+    
+*   Return file via HTTP response headers (Content-Disposition: attachment)
+    
+*   Eliminates all client-side download issues at cost of additional backend complexity
+    
+
+1.  **Telemetry & Monitoring**
+    
+
+*   Log download attempts vs. successes
+    
+*   Track browser type for failed downloads
+    
+*   Alert team when failure rate exceeds 5%
+    
+
+**Lesson for GenAI Systems:**Many AI systems focus on model accuracy while neglecting mundane integration points like file exports. **The last mile matters** — a perfect AI recommendation is useless if users can’t export the results. Silent failures destroy user trust more than obvious bugs.
+
+_**Bug 2: Weight Slider Silent Failure (50% subtle/no changes, HIGH severity)**_
+
+**Symptom:**Six participants (50%) reported that adjusting weight sliders (α, β, γ, δ) resulted in either “subtle changes” (4/12) or “no changes noticed” (2/12) in AI recommendations. Users expected significant, immediate updates but received minimal or no visible feedback.
+
+**Root Cause:****API rate limiting** — Groq’s free tier imposes strict limits: **30 requests per minute** (RPM) and token-per-minute (TPM) constraints (Groq Documentation, 2024). When users rapidly adjusted sliders, subsequent re-ranking requests were throttled or failed silently. The system likely: 1. Sent API request to re-rank owners 2. Received HTTP 429 (Rate Limit Exceeded) error 3. Failed to update UI or show error message 4. Displayed stale (cached) recommendations
+
+**Evidence from Field:**\- Groq Community (Aug 2024): “What happens if I surpass these limits? Does the model stop working until limits reset?” - Rate limit error format: "Rate limit reached for model... Limit 30, Used 30, Requested 1" - Groq docs recommend: “Implement exponential backoff or retries for 429 errors” - Similar issues reported across LLM APIs (OpenAI timeout errors: “Request time out after 30.0s” — GitHub Issue #447)
+
+**Why This Matters:**Weight tuning is a **core differentiator** of ScrumBot — it enables human control over AI priorities. When users adjust sliders and nothing happens, they: 1. Assume the feature doesn’t work 2. Lose trust in the system’s transparency claims 3. Revert to manual assignment, negating ScrumBot’s value
+
+Moreover, the **silent failure** means users don’t know whether to wait, retry, or report a bug. This is especially problematic for a system that emphasizes “transparency” — the AI’s decision-making process should be visible, but rate limiting makes the _system’s_ decision-making opaque.
+
+**Design Implications:**
+
+1.  **Client-Side Rate Limiting (Debouncing)**
+    
+
+*   Implement slider debounce: wait 500ms after last adjustment before sending request
+    
+*   Prevents rapid-fire API calls from user experimentation
+    
+*   Example: User drags slider 10 times in 2 seconds → only 1 API call
+    
+
+1.  **Explicit Loading States**
+    
+
+*   Show loading spinner during re-ranking: “Updating recommendations…”
+    
+*   Disable sliders during API call to prevent queued requests
+    
+*   Display progress: “Re-ranking 1/6 team members…”
+    
+
+1.  **Error Handling & User Feedback**
+    
+
+*   Catch HTTP 429 errors explicitly
+    
+*   Show actionable error: “Too many requests. Please wait 30 seconds and try again.”
+    
+*   Display countdown timer: “Rate limit resets in: 0:23”
+    
+*   Offer “Apply Changes” button instead of live updates
+    
+
+1.  **Caching & Smart Re-ranking**
+    
+
+*   Don’t re-rank if weights haven’t changed significantly (threshold: ±0.05)
+    
+*   Cache results for identical weight combinations
+    
+*   Only re-rank stories currently visible on screen (lazy loading)
+    
+
+**Deployment Implications:**
+
+1.  **Upgrade API Tier**
+    
+
+*   Groq Developer Tier: 10X higher rate limits
+    
+*   Cost-benefit: $10-50/month vs. 50% feature failure rate
+    
+*   Essential for production with >10 concurrent users
+    
+
+1.  **Implement Retry Logic**
+    
+
+*   Exponential backoff: wait 2s, 4s, 8s, 16s before retry
+    
+*   Maximum 3 retries before showing error to user
+    
+*   Log retry attempts for monitoring
+    
+
+1.  **Architecture Changes**
+    
+
+*   Move re-ranking to background queue (Redis + worker processes)
+    
+*   Users submit weight changes → receive “Processing…” → notification when complete
+    
+*   Enables batching: process multiple weight updates in single API call
+    
+
+1.  **Monitoring & Alerting**
+    
+
+*   Track 429 error rate in production
+    
+*   Alert team when error rate exceeds 1%
+    
+*   Set up Groq API quota monitoring dashboard
+    
+
+**Lesson for GenAI Systems:****API rate limits are invisible failure modes.** Unlike UI bugs (which are obvious), rate limiting creates intermittent, user-dependent failures that are hard to debug. GenAI systems must: - Design for rate limits from day one (debouncing, queueing, caching) - Make API limits visible to users (not just developers) - Provide clear feedback when limits are hit (not silent failures)
+
+**Research Contribution:**This finding highlights a gap in GenAI evaluation methodology. Standard usability studies (like ours) focus on _feature_ performance (does weight tuning work?) but not _infrastructure_ performance (does it work under realistic load?). Future studies should include **stress testing** — having multiple users adjust weights simultaneously — to surface rate limiting issues before production.
+
+_**Bug 3: Story Extraction Complete Failure (8% failure rate, CRITICAL severity)**_
+
+**Symptom:**One participant (8%) was completely unable to extract stories from the demo transcript. The system appeared to process the transcript (progress indicators were “somewhat visible”) but ultimately failed with no user stories generated. This was the only participant who gave SUS score of 47.5 (vs. median 85).
+
+**Root Cause:****Unknown — likely API timeout or network issue.** Based on error patterns from literature, probable causes include:
+
+1.  **API Timeout**
+    
+
+*   Groq/LLM APIs can timeout on long transcripts (>2000 tokens)
+    
+*   Default timeouts: 30-60 seconds (AWS Bedrock docs recommend 3600s for Anthropic Claude)
+    
+*   Our transcript processing takes 10-30 seconds normally, but network latency could push this over timeout threshold
+    
+
+1.  **Network Interruption**
+    
+
+*   Participant’s internet connection dropped during API call
+    
+*   WebSocket/fetch request timed out client-side
+    
+*   No retry logic implemented
+    
+
+1.  **Temporary API Outage**
+    
+
+*   Groq API experienced brief downtime
+    
+*   HTTP 500/502/503 server errors
+    
+*   Our system didn’t gracefully handle server-side failures
+    
+
+1.  **Transcript Parsing Error**
+    
+
+*   Demo transcript failed to parse correctly on specific browser/OS
+    
+*   Edge case in VTT parser (timestamp format mismatch)
+    
+*   No fallback to raw text extraction
+    
+
+**Evidence from Field:**\- LLM API timeout errors are common: “Request time out after 30.0s” (OpenAI, GitHub Issue #447) - AWS Bedrock docs (May 2025): “LLMs such as Anthropic Claude 3.7 Sonnet can take more than 60 seconds to return a response” - Recommended: “Set timeout value of at least 3,600 seconds” - Dev Community (Dec 2024): “Why Your API’s Error Messages Fail When Called by an LLM” — emphasizes need for **actionable error recovery plans**
+
+**Why This Matters:**Story extraction is the **first and most critical** step in ScrumBot’s workflow. If this fails, the entire system is unusable. An 8% complete failure rate (1/12 users) is **unacceptable for production** — this translates to 1 in 12 sprint planning sessions failing catastrophically.
+
+More critically, the user received **no actionable feedback**: - No error message explaining what went wrong - No suggestion to retry, refresh, or check network connection - No fallback option (e.g., manual story entry)
+
+The result: a frustrated user (SUS 47.5) who blamed the system and abandoned the workflow.
+
+**Design Implications:**
+
+1.  **Comprehensive Error Handling**
+    
+
+*   Catch ALL exception types: timeout, network, API, parsing
+    
+*   Show specific error messages:
+    
+    *   Timeout: “Processing took too long. Please try a shorter transcript or check your connection.”
+        
+    *   Network: “Connection lost. Please check your internet and retry.”
+        
+    *   API Error: “AI service temporarily unavailable. Retry in 30 seconds.”
+        
+    *   Parse Error: “Transcript format not recognized. Please upload .VTT, .SRT, or .TXT file.”
+        
+
+1.  **Retry Mechanism with User Control**
+    
+
+*   Auto-retry once on timeout (with user notification)
+    
+*   Show “Retry” button after first failure
+    
+*   Offer “Try Different Model” fallback (e.g., smaller/faster Llama model)
+    
+*   **Never silently fail**
+    
+
+1.  **Timeout Warnings & Expectations**
+    
+
+*   Show estimated processing time: “This will take ~15-20 seconds”
+    
+*   If processing exceeds expected time: “Taking longer than expected (network issue?)”
+    
+*   Incremental feedback: “Parsing transcript… Sending to AI… Formatting stories…”
+    
+
+1.  **Graceful Degradation**
+    
+
+*   If AI extraction fails, offer manual story entry form
+    
+*   Provide “Upload Different Transcript” option immediately
+    
+*   Show troubleshooting guide with common fixes
+    
+
+1.  **Better Progress Indicators**
+    
+
+*   The outlier user reported progress as “somewhat visible” — this suggests our indicator was too subtle
+    
+*   Make progress highly visible: large loading animation, percentage counter, estimated time remaining
+    
+*   Prove the system is working: “Processing line 45/120…”
+    
+
+**Deployment Implications:**
+
+1.  **Increase Timeout Thresholds**
+    
+
+*   Set API timeout to 120 seconds (2 minutes) minimum
+    
+*   For long transcripts (>5000 words), increase to 300 seconds
+    
+*   Use streaming APIs where available to show incremental progress
+    
+
+1.  **Implement Health Checks**
+    
+
+*   Check Groq API health before sending request
+    
+*   If API is down, show immediate warning: “AI service unavailable. Try again in 5 minutes.”
+    
+*   Prevent users from starting doomed workflows
+    
+
+1.  **Error Logging & Monitoring**
+    
+
+*   Send all extraction failures to error tracking service (Sentry, LogRocket)
+    
+*   Include: transcript length, user browser/OS, API response time, error type
+    
+*   Create alert: “Extraction failure rate >5%”
+    
+
+1.  **Fallback Architecture**
+    
+
+*   Implement secondary LLM provider (e.g., OpenAI, Anthropic) as backup
+    
+*   If Groq fails, automatically retry with fallback provider
+    
+*   Show user: “Primary AI unavailable. Using backup (may be slower).”
+    
+
+1.  **Transcript Preprocessing**
+    
+
+*   Validate transcript before sending to API (check length, format)
+    
+*   Split very long transcripts (>10,000 words) into chunks
+    
+*   Process chunks separately, then merge results
+    
+
+**Lesson for GenAI Systems:****Complete failures (even 8%) are catastrophic** because they create binary experiences: the system either works perfectly or is completely broken. Unlike minor bugs (which users can work around), complete failures destroy trust and prevent adoption.
+
+**Critical insight:** Our focus on _average_ performance (92% success) masked the **worst-case experience** (8% complete failure). Production GenAI systems must optimize for: - **Minimum acceptable success rate** (not average) - **Worst-case user experience** (not median) - **Error recovery paths** (not just happy paths)
+
+**Research Contribution:**This finding exposes a methodological gap in GenAI evaluation. Standard usability studies report **aggregate metrics** (92% average success), but production deployment requires understanding **outlier failures**. Future research should: - Report 95th percentile performance (not just mean) - Conduct root-cause analysis of all failures (not just count them) - Test edge cases explicitly (poor network, slow devices, unusual input)
+
+**6.3 Synthesis: Implications for Transparent AI Systems**
+
+These three bugs reveal a fundamental tension in transparent AI system design:
+
+**Transparency ≠ Observability**
+
+ScrumBot succeeded at **AI transparency** (showing _why_ it made recommendations) but failed at **system observability** (showing _what_ is happening in the infrastructure). Users could see AI justifications but couldn’t see: - “Your download was blocked by Brave browser” - “Rate limit exceeded — waiting 30 seconds” - “API timed out — retrying with backup server”
+
+**Lesson:** Transparent AI systems must expose **both**: 1. **Model behavior** (AI decision-making) — we did this well 2. **System behavior** (infrastructure, APIs, errors) — we failed here
+
+**Design Principle for Future Work:**Every AI system should implement **failure transparency**: - Show error messages in plain language (not HTTP codes) - Explain what failed and why (not just “error occurred”) - Provide actionable next steps (retry, adjust input, contact support) - Log all failures for developer debugging (not just user-facing errors)
+
+**6.4 Interpretation**
+
+**Transparency = Trust (But Only If The System Works)**
+
+Our study validated that transparency drives trust (4.67/5) — users valued seeing _why_ AI made recommendations. However, bugs reveal that **technical reliability is prerequisite to trust**. When the system fails silently: - Transparency becomes irrelevant (users can’t see justifications if extraction fails) - Trust evaporates (users blame the AI, not the infrastructure)
+
+**Automation + Control = Adoption (But Only If Both Work)**
+
+The 92% adoption willingness validates mixed-initiative design, but bugs show that **both automation and control must be reliable**: - Automation failed: Story extraction (8% complete failure) - Control failed: Weight sliders (50% ineffective)
+
+**Lesson:** Mixed-initiative systems have **two single points of failure**: the AI (automation) and the human controls (weight sliders, overrides). Either failure undermines the entire value proposition.
+
+**6.5 Conclusion on Bug Analysis**
+
+While ScrumBot achieved excellent aggregate usability (SUS 83.5), deep analysis of three critical bugs reveals that **GenAI systems must optimize for worst-case experiences**, not just average performance. The path from research prototype to production system requires:
+
+1.  **Defensive engineering** — assume APIs will fail, design for graceful degradation
+    
+2.  **System observability** — expose infrastructure failures as clearly as AI decisions
+    
+3.  **Recovery pathways** — every error needs actionable next steps
+    
+4.  **Stress testing** — evaluate under realistic load and edge cases
+    
+
+These lessons extend beyond ScrumBot to the broader challenge of deploying reliable GenAI systems in production environments.
+
 
 # 7. Limitations
 
